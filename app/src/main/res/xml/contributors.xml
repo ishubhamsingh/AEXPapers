@@ -2,20 +2,13 @@
 <resources>
 
     <contributor
-        name="Name 1"
-        contribution="Contribution 1, contribution 2"
-        link="" />
+        name="Shubham Singh"
+        contribution="Development"
+        link="https://github.com/ishubhamsingh" />
+
     <contributor
-        name="Name 2"
-        contribution="Contribution 1, contribution 2, contribution 3"
-        link="" />
-    <contributor
-        name="Another Name"
-        contribution="Contribution 1"
-        link="http://plus.google.com/..." />
-    <contributor
-        name="Another Name 2"
-        contribution="Contribution 1, contribution 2, contribution 3, contribution 4, contribution 5, contribution 6"
-        link="http://www.link.com" />
+        name="Amol Amrit"
+        contribution="Maintenance and Updates"
+        link="https://github.com/AmolAmrit" />
 
 </resources>

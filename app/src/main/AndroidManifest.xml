@@ -4,11 +4,11 @@
     android:installLocation="auto"
     package="org.aospextended.aexpapers">
 
-    <!-- If you are not using donation and premium request, you need to remove BILLING permission -->
-    <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- If you are not using donation and premium request, you need to remove BILLING permission
+    <uses-permission android:name="com.android.vending.BILLING" />-->
 
-    <!-- If you are not using license checker, you need to remove CHECK_LICENSE permission -->
-    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <!-- If you are not using license checker, you need to remove CHECK_LICENSE permission
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />-->
 
     <supports-screens
         android:smallScreens="true"

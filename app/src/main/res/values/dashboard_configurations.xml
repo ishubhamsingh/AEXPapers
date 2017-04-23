@@ -41,7 +41,7 @@
     <string name="dev_email">coolsks94@gmail.com</string>
 
     <!-- Wallpaper json link -->
-    <string name="wallpaper_json">https://drive.google.com/uc?id=0B0f4ypHfNKm5ekphR1RZTWVPYWM</string>
+    <string name="wallpaper_json">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/json/wallpaper_config.json</string>
 
     <!-- Allow to download wallpaper
     * If disabled user only able to apply wallpaper from dashboard -->
@@ -49,6 +49,8 @@
 
     <!-- Auto generated color for wallpaper card -->
     <bool name="card_wallpaper_auto_generated_color">false</bool>
+
+    <string name="splash_screen_title">AEXPapers</string>
 
     <!-- Wallpapers grid preview quality
     * Image quality when displaying wallpapers in grid
@@ -65,7 +67,7 @@
     * ex: navigation_view_header.png -> navigation_view_header
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="navigation_view_header">#000000</string> -->
-    <string name="navigation_view_header">https://c.slashgear.com/wp-content/uploads/2015/08/AndroidMarshmallow_10.jpg</string>
+    <string name="navigation_view_header">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/extra/navigation_view_header.png</string>
 
     <!-- Navigation view header height
     * default: 200dp -->
@@ -86,13 +88,13 @@
     * just put image name here without the extension (ex: about_image.png -> about_image)
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="about_image">#000000</string> -->
-    <string name="about_image">https://c.slashgear.com/wp-content/uploads/2015/08/AndroidMarshmallow_10.jpg</string>
+    <string name="about_image">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/extra/navigation_view_header.png</string>
 
     <!-- About profile image
     * If you want to use image from url, just put the url here
     * If you want to use image stored in project (drawable folder)
     * just put image name here without the extension (ex: about_profile_image.png -> about_profile_image) -->
-    <string name="about_profile_image">https://lh3.googleusercontent.com/-KBI2HdgNtN0/AAAAAAAAAAI/AAAAAAAABpc/icnuAgrjOT4/s256-p-rw-no/photo.jpg</string>
+    <string name="about_profile_image">https://github.com/AospExtended/manifest/raw/7.1.1/aex_logo.png</string>
 
     <!-- About title above description -->
     <string name="about_title">AEXPapers</string>
