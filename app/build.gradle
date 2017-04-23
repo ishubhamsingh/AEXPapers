@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.dm.wallpaper.board.sample"
+        applicationId "org.aospextended.aexpapers"
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
         versionCode 1
