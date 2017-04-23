@@ -36,6 +36,27 @@
 				"thumbUrl": "http://i.imgur.com/aXy9xEH.png",
 				"name": "Starwars",
                 "category": "SciFi,Light"
+			},
+            {
+				"author": "Designed by Krapk",
+				"url": "http://i.imgur.com/gKXQkoF.jpg",
+				"thumbUrl": "http://i.imgur.com/gKXQkoF.jpg",
+				"name": "Watchdog",
+                "category": "SciFi,Dark"
+			},
+            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/CSqjiWI.png",
+				"thumbUrl": "http://i.imgur.com/CSqjiWI.png",
+				"name": "Alien",
+                "category": "SciFi,Colorful"
+			},
+            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/L76xfkA.png",
+				"thumbUrl": "http://i.imgur.com/L76xfkA.png",
+				"name": "German Soldier",
+                "category": "Light"
 			}
 		]
 }
