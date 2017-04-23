@@ -41,7 +41,7 @@
     <string name="dev_email">coolsks94@gmail.com</string>
 
     <!-- Wallpaper json link -->
-    <string name="wallpaper_json">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/json/wallpaper_config.json</string>
+    <string name="wallpaper_json">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/json/wallpaper_config.json</string>
 
     <!-- Allow to download wallpaper
     * If disabled user only able to apply wallpaper from dashboard -->
@@ -67,7 +67,7 @@
     * ex: navigation_view_header.png -> navigation_view_header
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="navigation_view_header">#000000</string> -->
-    <string name="navigation_view_header">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/extra/navigation_view_header.png</string>
+    <string name="navigation_view_header">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/extra/navigation_view_header.png</string>
 
     <!-- Navigation view header height
     * default: 200dp -->
@@ -88,7 +88,7 @@
     * just put image name here without the extension (ex: about_image.png -> about_image)
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="about_image">#000000</string> -->
-    <string name="about_image">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/extra/navigation_view_header.png</string>
+    <string name="about_image">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/extra/navigation_view_header.png</string>
 
     <!-- About profile image
     * If you want to use image from url, just put the url here
