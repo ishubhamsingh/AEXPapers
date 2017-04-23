@@ -1,2 +1,3 @@
-# wallpaperboard-sample
-Sample implementation of Wallpaper Board https://github.com/danimahardhika/wallpaperboard
+# AEXPapers
+
+Wallpaper app for AospExtended ROM base on Wallpaper Board https://github.com/danimahardhika/wallpaperboard
