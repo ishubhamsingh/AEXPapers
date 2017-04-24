@@ -48,7 +48,7 @@
     <bool name="enable_wallpaper_download">true</bool>
 
     <!-- Auto generated color for wallpaper card -->
-    <bool name="card_wallpaper_auto_generated_color">false</bool>
+    <bool name="card_wallpaper_auto_generated_color">true</bool>
 
     <string name="splash_screen_title">AEXPapers</string>
 
