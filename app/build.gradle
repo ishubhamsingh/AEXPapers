@@ -8,7 +8,7 @@ android {
         variant.outputs.each { output ->
             def file = output.outputFile
             def appName = parent.name
-            def fileName = appName.replace(" ", "_") +"_v"+ variant.versionName +".apk"
+            def fileName = appName.replace(" ", "_")+".apk"
             output.outputFile = new File(file.parent, fileName)
         }
     }
