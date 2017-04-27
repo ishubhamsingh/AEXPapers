@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#DC4316</color>
+    <color name="colorPrimary">#025d8c</color>
     <color name="colorPrimaryDark">#025d8c</color>
     <color name="colorAccent">#025d8c</color>
 
-    <color name="darkColorPrimary">#DC4316</color>
+    <color name="darkColorPrimary">#025d8c</color>
     <color name="darkColorPrimaryDark">#025d8c</color>
     <color name="darkColorAccent">#025d8c</color>
 
@@ -22,8 +22,8 @@
 
     <color name="navigationViewText">#D9000000</color>
     <color name="navigationViewTextDark">#FFFFFF</color>
-    <color name="navigationViewTextSelected">#DC4316</color>
-    <color name="navigationViewTextSelectedDark">#DC4316</color>
+    <color name="navigationViewTextSelected">#025d8c</color>
+    <color name="navigationViewTextSelectedDark">#025d8c</color>
     <color name="navigationViewSelectedBackground">#00000000</color>
     <color name="navigationViewSelectedBackgroundDark">#00000000</color>
 
@@ -53,6 +53,6 @@
     <color name="dividerListDark">#18FFFFFF</color>
 
     <!-- Favorite Wallpaper -->
-    <color name="favoriteColor">#DC4316</color>
+    <color name="favoriteColor">#025d8c</color>
 
 </resources>
