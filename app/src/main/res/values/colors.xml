@@ -2,12 +2,12 @@
 <resources>
 
     <color name="colorPrimary">#DC4316</color>
-    <color name="colorPrimaryDark">#C43916</color>
-    <color name="colorAccent">#2ea0a0</color>
+    <color name="colorPrimaryDark">#025d8c</color>
+    <color name="colorAccent">#025d8c</color>
 
     <color name="darkColorPrimary">#DC4316</color>
-    <color name="darkColorPrimaryDark">#C43916</color>
-    <color name="darkColorAccent">#2ea0a0</color>
+    <color name="darkColorPrimaryDark">#025d8c</color>
+    <color name="darkColorAccent">#025d8c</color>
 
     <!-- Splash Screen -->
     <color name="splashColor">#F2F2F2</color>
@@ -28,7 +28,7 @@
     <color name="navigationViewSelectedBackgroundDark">#00000000</color>
 
     <!-- Popup Bubble -->
-    <color name="popupBubble">#2ea0a0</color>
+    <color name="popupBubble">#025d8c</color>
     <color name="popupBubbleText">#FFFFFF</color>
 
     <!-- Card -->
