@@ -127,8 +127,8 @@
     * ex:
     * <string name="about_link_2_title">Facebook</string>
     * <string name="about_link_2_url">http://facebook.com/yourlink</string> -->
-    <string name="about_link_2_title">Website</string>
-    <string name="about_link_2_url">http://aospextended.com</string>
+    <string name="about_link_2_title">Gallery</string>
+    <string name="about_link_2_url">http://aospextended.imgur.com/</string>
 
     <!-- Contributors dialog
     * Take a look inside values/xml/contributors.xml to add contributors -->
