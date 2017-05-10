@@ -22,7 +22,28 @@
         ],
     
 	"Wallpapers":
-        [
+        [   
+            {
+				"author": "Designed by Gabriel Bercelli",
+				"url": "http://i.imgur.com/DsAQI2x.png",
+				"thumbUrl": "https://i.imgur.com/Al1ipUF.png",
+				"name": "Moon",
+                "category": "Dark,SciFi"
+			},
+            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/EQuFOK7.png",
+				"thumbUrl": "https://i.imgur.com/bKp5LeN.png",
+				"name": "Day",
+                "category": "Light"
+			},
+            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/C6n94QW.png",
+				"thumbUrl": "https://i.imgur.com/UeSHEdP.png",
+				"name": "PC",
+                "category": "Colorful,SciFi"
+			},
 			{
 				"author": "Designed by Krapk",
 				"url": "http://i.imgur.com/7B9IOEy.png",
