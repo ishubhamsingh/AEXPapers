@@ -19,10 +19,122 @@
             {
                 "name": "Material"
             }
+            {
+                "name": "Poly"
+            }
+            {
+                "name": "Other"
+            }
         ],
     
 	"Wallpapers":
         [   
+        
+            {
+				"author": "Designed by Efren Rodriguez",
+				"url": "http://i.imgur.com/QgJWVtT.jpg",
+				"thumbUrl": "http://i.imgur.com/EgByOwm.jpg",
+				"name": "Material Blue",
+                "category": "Material,Dark"
+			},
+            {
+				"author": "Designed by Efren Rodriguez",
+				"url": "http://i.imgur.com/rPdvh8L.jpg",
+				"thumbUrl": "http://i.imgur.com/W6zqaqp.jpg",
+				"name": "Material Green",
+                "category": "Material,Dark"
+			},
+            {
+				"author": "Designed by Efren Rodriguez",
+				"url": "http://i.imgur.com/XRdMttz.jpg",
+				"thumbUrl": "http://i.imgur.com/jaWoQGC.jpg",
+				"name": "Material Red",
+                "category": "Material,Dark"
+			},
+            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/jN4vCvU.png",
+				"thumbUrl": "http://i.imgur.com/swba6KE.png",
+				"name": "Violet Glaze",
+                "category": "Colorful,Dark"
+			},
+			            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/TESuw98.png",
+				"thumbUrl": "http://i.imgur.com/TqxkuHb.png",
+				"name": "Black Glaze",
+                "category": "Colorful,Dark"
+			},
+			            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/REvmhw7.png",
+				"thumbUrl": "http://i.imgur.com/FMNqTB7.png",
+				"name": "Green Glaze",
+                "category": "Colorful,Dark"
+			},
+			            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/Hz60zzX.png",
+				"thumbUrl": "http://i.imgur.com/8whRKmF.png",
+				"name": "Blue Glaze",
+                "category": "Colorful,Dark"
+			},
+			            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/aibjtVr.png",
+				"thumbUrl": "http://i.imgur.com/8GOECcy.png",
+				"name": "Red Glaze",
+                "category": "Colorful,Dark"
+			},
+            {
+				"author": "Designed by Renan Lopes",
+				"url": "http://i.imgur.com/VFqB2Jn.png",
+				"thumbUrl": "http://i.imgur.com/grdp4nT.png",
+				"name": "Purple Glaze",
+                "category": "Colorful,Dark"
+			},
+            {
+				"author": "Designed by Rogerio Oliveira",
+				"url": "http://i.imgur.com/KkoJuCX.jpg",
+				"thumbUrl": "http://i.imgur.com/at36Ule.jpg",
+				"name": "Translucent Glass",
+                "category": "Other"
+			},
+            {
+				"author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/hG67IUW.jpg",
+				"thumbUrl": "http://i.imgur.com/2yLtMBR.jpg",
+				"name": "Neon Bubbles Black",
+                "category": "Material,Dark"
+			},
+            {
+				"author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/0TfIcaH.jpg",
+				"thumbUrl": "http://i.imgur.com/zUAkpQS.jpg",
+				"name": "Neon Bubbles Gray",
+                "category": "Material,Dark"
+			},
+            {
+				"author": "Designed by Gabriel Bercelli",
+				"url": "http://i.imgur.com/lFDNdpj.png",
+				"thumbUrl": "http://i.imgur.com/miolPcU.png",
+				"name": "Material Brown",
+                "category": "Material,Colorful"
+			},
+            {
+				"author": "Designed by Gabriel Bercelli",
+				"url": "http://i.imgur.com/oDKlOEQ.jpg",
+				"thumbUrl": "http://i.imgur.com/RPgYoow.jpg",
+				"name": "Material Park",
+                "category": "Material,Colorful,Dark"
+			},
+            {
+				"author": "Designed by Gabriel Bercelli",
+				"url": "http://i.imgur.com/F9lcjcn.png",
+				"thumbUrl": "http://i.imgur.com/hBCt6ds.png",
+				"name": "Bubbles",
+                "category": "Colorful"
+			},
             {
 				"author": "Designed by Gabriel Bercelli",
 				"url": "http://i.imgur.com/DsAQI2x.png",
