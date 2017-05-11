@@ -11,11 +11,6 @@
 
     <string name="app_name">AEXPapers</string>
 
-    <!-- CONFIG: DEFAULT THEME -->
-
-    <!-- Use dark theme as default theme -->
-    <bool name="use_dark_theme">true</bool>
-
     <!-- Enable or disable shadow
     * Include:
     * Toolbar, card, and list shadow -->

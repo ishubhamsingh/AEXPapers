@@ -100,15 +100,6 @@ public class SettingsFragment extends Fragment {
                         formatter.format(cache) + " MB"),
                 Setting.Type.CACHE, -1));
 
-        settings.add(new Setting(R.drawable.ic_toolbar_theme,
-                getActivity().getResources().getString(R.string.pref_theme_header),
-                "", "", "", Setting.Type.HEADER, -1));
-
-        settings.add(new Setting(-1, "",
-                getActivity().getResources().getString(R.string.pref_theme_dark),
-                getActivity().getResources().getString(R.string.pref_theme_dark_desc),
-                "", Setting.Type.THEME, Preferences.get(getActivity()).isDarkTheme() ? 1 : 0));
-
         settings.add(new Setting(R.drawable.ic_toolbar_wallpapers,
                 getActivity().getResources().getString(R.string.pref_wallpaper_header),
                 "", "", "", Setting.Type.HEADER, -1));
