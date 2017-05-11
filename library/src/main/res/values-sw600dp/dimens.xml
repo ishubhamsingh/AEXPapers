@@ -9,7 +9,7 @@
 
     <!-- Splash Screen -->
     <dimen name="splash_screen_logo">114dp</dimen>
-    <dimen name="splash_screen_text">16sp</dimen>
+    <dimen name="splash_screen_text">28sp</dimen>
 
     <!-- About header image height -->
     <dimen name="about_profile">140dp</dimen>
