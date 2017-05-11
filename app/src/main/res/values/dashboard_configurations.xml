@@ -53,7 +53,7 @@
     <bool name="enable_wallpaper_download">true</bool>
 
 
-    <string name="splash_screen_title">AEXPapers</string>
+    <string name="splash_screen_title">AOSPEXTENDED PAPERS</string>
 
     <!-- Wallpapers grid preview quality
     * Image quality when displaying wallpapers in grid
