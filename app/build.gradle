@@ -17,8 +17,8 @@ android {
         applicationId "org.aospextended.aexpapers"
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
-        versionCode 41
-        versionName "4.1"
+        versionCode 43
+        versionName "4.3"
         vectorDrawables.useSupportLibrary = true
     }
 
