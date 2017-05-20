@@ -54,7 +54,7 @@
     * Image quality when displaying wallpapers in grid
     * Higher value means higher quality, more RAM usage
     * Lower value means lower quality, minimal RAM usage -->
-    <integer name="wallpaper_grid_preview_quality">3</integer>
+    <integer name="wallpaper_grid_preview_quality">10</integer>
 
     <!-- Rounded corner wallpaper card
    * NOTE: Only for Android Lollipop and above, automatically disabled on Android below Lollipop -->
