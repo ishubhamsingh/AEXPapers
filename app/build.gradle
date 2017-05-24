@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion rootProject.ext.CompileSdk
@@ -31,17 +32,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    /*
-     * WallpaperBoard Library
-     *
-     * How to update?
-     * 1. See latest version at GitHub, https://github.com/danimahardhika/wallpaperboard/releases
-     * 2. Change WallpaperBoard dependency matching latest version
-     * 3. com.github.danimahardhika:wallpaperboard:$versionNumber
-     * 4. Sync Project with Gradle Files
-     * 5. Clean project
-     * 6. Done
-     */
     implementation 'com.github.danimahardhika:wallpaperboard:1.7.0-b1'
+    implementation 'com.google.firebase:firebase-core:11.4.2'
+    implementation 'com.google.firebase:firebase-crash:11.4.2'
+    implementation 'com.google.firebase:firebase-messaging:11.4.2'
+    implementation 'com.firebase:firebase-jobdispatcher:0.5.2'
 }

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75754735914",
+    "firebase_url": "https://aexpapers.firebaseio.com",
+    "project_id": "aexpapers",
+    "storage_bucket": "aexpapers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75754735914:android:28b24918eaec3af3",
+        "android_client_info": {
+          "package_name": "org.aospextended.aexpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75754735914-9j74a0d1s8tan9e36kn3hcjv7gne40nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.aospextended.aexpapers",
+            "certificate_hash": "c367a587eea33df697ec89e584b0b0b70079a3e7"
+          }
+        },
+        {
+          "client_id": "75754735914-liteo50tonpt74t74ccfsl30cj9se32t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNqY9310w6jfGHSiBtjtw0gRXpwKMJAJQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75754735914-liteo50tonpt74t74ccfsl30cj9se32t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
