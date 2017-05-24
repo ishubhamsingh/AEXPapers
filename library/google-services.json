@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "278862642754",
+    "firebase_url": "https://wallpaperboard-c5908.firebaseio.com",
+    "project_id": "wallpaperboard-c5908",
+    "storage_bucket": "wallpaperboard-c5908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278862642754:android:325075c031dcfb1a",
+        "android_client_info": {
+          "package_name": "com.dm.wallpaper.board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278862642754-447jkspi29n3m5l0ujnfjkaup1ki3hfg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQqhrrnx8G8DEHZvTBOubG1WVRb823CEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
