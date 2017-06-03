@@ -36,8 +36,43 @@
 				"name": "ArtWork",
                 "category": "Dark,Other"
 			},
-            {
-				"author": "Designed by Customworx",
+            {   
+			    "author": "Designed by Krapk",
+				"url": "http://i.imgur.com/zp6BVMw.jpg",
+				"thumbUrl": "http://i.imgur.com/zp6BVMw.jpg",
+				"name": "Rocket",
+                "category": "SciFi,Colorful"
+		    },
+		    {   
+			    "author": "Designed by Adithya Jayan",
+				"url": "http://i.imgur.com/ac3XS3A.jpg",
+				"thumbUrl": "http://i.imgur.com/ac3XS3A.jpg",
+				"name": "Energy Blue",
+                "category": "Material"
+		    },
+		    {   
+			    "author": "Designed by Adithya Jayan",
+				"url": "http://i.imgur.com/HwgvVJs.jpg",
+				"thumbUrl": "http://i.imgur.com/HwgvVJs.jpg",
+				"name": "Energy Green",
+                "category": "Material"
+		    },
+		    {   
+			    "author": "Designed by Adithya Jayan",
+				"url": "http://i.imgur.com/pw1HrfR.jpg",
+				"thumbUrl": "http://i.imgur.com/pw1HrfR.jpg",
+				"name": "Energy Yellow",
+                "category": "Material"
+		    },
+		    {   
+			    "author": "Designed by Adithya Jayan",
+				"url": "http://i.imgur.com/gPCVPGJ.jpg",
+				"thumbUrl": "http://i.imgur.com/gPCVPGJ.jpg",
+				"name": "Energy Red",
+                "category": "Material"
+			},  
+			{   
+			    "author": "Designed by Customworx",
 				"url": "http://i.imgur.com/2SSzDG5.jpg",
 				"thumbUrl": "http://i.imgur.com/czjq5NN.png",
 				"name": "AEX Poly 7",
