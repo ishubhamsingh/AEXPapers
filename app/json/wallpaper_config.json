@@ -315,6 +315,41 @@
 				"thumbUrl": "http://i.imgur.com/W9Jt73h.png",
 				"name": "Alien",
                 "category": "SciFi,Colorful"
+		    },
+			{    
+			    "author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/QQPJHQY.jpg",
+				"thumbUrl": "http://i.imgur.com/QQPJHQY.jpg",
+				"name": "AEX Pink",
+                "category": "Material, Dark"
+			},
+			{    
+			    "author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/rEQPpkD.jpg",
+				"thumbUrl": "http://i.imgur.com/rEQPpkD.jpg",
+				"name": "AEX Yellow",
+                "category": "Material, Dark"
+			},
+			{    
+			    "author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/f6gS0Ke.jpg",
+				"thumbUrl": "http://i.imgur.com/f6gS0Ke.jpg",
+				"name": "AEX Red",
+                "category": "Material, Dark"
+			},
+			{    
+			    "author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/7W19bs0.jpg",
+				"thumbUrl": "http://i.imgur.com/7W19bs0.jpg",
+				"name": "AEX iBlue",
+                "category": "Material, Dark"
+			},
+			{    
+			    "author": "Designed by Azeem Shaikh",
+				"url": "http://i.imgur.com/lpWbfut.jpg",
+				"thumbUrl": "http://i.imgur.com/lpWbfut.jpg",
+				"name": "Iron Man",
+                "category": "SciFi"
 			},
             {
 				"author": "Designed by Renan Lopes",
