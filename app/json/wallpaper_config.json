@@ -356,7 +356,7 @@
 				"url": "http://i.imgur.com/lpWbfut.jpg",
 				"thumbUrl": "http://i.imgur.com/lpWbfut.jpg",
 				"name": "Iron Man",
-                "category": "Colorful"
+                "category": "SciFi"
 			},
 			{
 			    "author": "Designed by Bad Boy",
@@ -392,6 +392,27 @@
 				"thumbUrl": "http://i.imgur.com/KM62sO5.png",
 				"name": "AEX Moon Light"
                 "category": "Dark"
+		    },
+			{
+			    "author": "Designed by Custom Wallz"
+				"url": "http://i.imgur.com/PM2ybbf.jpg",
+				"thumbUrl": "http://i.imgur.com/PM2ybbf.jpg",
+				"name": "Saffron Extended by Savio"
+                "category": "Colorful"
+		    },
+			{
+			    "author": "Designed by Custom Wallz"
+				"url": "http://i.imgur.com/TJYOmeW.jpg",
+				"thumbUrl": "http://i.imgur.com/TJYOmeW.jpg",
+				"name": "Blue Extended by Savio"
+                "category": "Colorful"
+		    },
+			{
+			    "author": "Designed by Custom Wallz"
+				"url": "http://i.imgur.com/PClNRIr.jpg",
+				"thumbUrl": "http://i.imgur.com/PClNRIr.jpg",
+				"name": "Green Extended by Savio"
+                "category": "Colorful"
 		    },
 			{
 				"author": "Designed by Renan Lopes",
