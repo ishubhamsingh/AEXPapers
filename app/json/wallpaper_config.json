@@ -1,425 +1,420 @@
 {
-    "Categories": 
-        [
-            {
-                "name": "Light"
-            },
-            {
-                "name": "Dark"
-            },
-            {
-                "name": "Colorful"
-            },
-            {
-                "name": "SciFi"
-            },
-            {
-                "name": "Customworx"
-            },
-            {
-                "name": "Material"
-            },
-            {
-                "name": "Poly"
-            },
-            {
-                "name": "Other"
-            }
-        ],
-    
-	"Wallpapers":
-        [   
-            {
-				"author": "Designed by ishubhamsingh",
-				"url": "http://i.imgur.com/qA8wox8.png",
-				"thumbUrl": "http://i.imgur.com/73vUodT.png",
-				"name": "ArtWork",
-                "category": "Dark,Other"
-			},
-            {   
-			    "author": "Designed by Krapk",
-				"url": "http://i.imgur.com/zp6BVMw.jpg",
-				"thumbUrl": "http://i.imgur.com/zp6BVMw.jpg",
-				"name": "Rocket",
-                "category": "SciFi,Colorful"
-		    },
-		    {   
-			    "author": "Designed by Adithya Jayan",
-				"url": "http://i.imgur.com/ac3XS3A.jpg",
-				"thumbUrl": "http://i.imgur.com/ac3XS3A.jpg",
-				"name": "Energy Blue",
-                "category": "Material"
-		    },
-		    {   
-			    "author": "Designed by Adithya Jayan",
-				"url": "http://i.imgur.com/HwgvVJs.jpg",
-				"thumbUrl": "http://i.imgur.com/HwgvVJs.jpg",
-				"name": "Energy Green",
-                "category": "Material"
-		    },
-		    {   
-			    "author": "Designed by Adithya Jayan",
-				"url": "http://i.imgur.com/pw1HrfR.jpg",
-				"thumbUrl": "http://i.imgur.com/pw1HrfR.jpg",
-				"name": "Energy Yellow",
-                "category": "Material"
-		    },
-		    {   
-			    "author": "Designed by Adithya Jayan",
-				"url": "http://i.imgur.com/gPCVPGJ.jpg",
-				"thumbUrl": "http://i.imgur.com/gPCVPGJ.jpg",
-				"name": "Energy Red",
-                "category": "Material"
-			},  
-			{   
-			    "author": "Designed by Customworx",
-				"url": "http://i.imgur.com/2SSzDG5.jpg",
-				"thumbUrl": "http://i.imgur.com/czjq5NN.png",
-				"name": "AEX Poly 7",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/LMqcmKr.jpg",
-				"thumbUrl": "http://i.imgur.com/Vg4oNWm.png",
-				"name": "AEX Poly 6",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/HAUDYhU.jpg",
-				"thumbUrl": "http://i.imgur.com/dfHcfay.png",
-				"name": "AEX Poly 5",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/gIiwCqg.jpg",
-				"thumbUrl": "http://i.imgur.com/wMsQL6P.png",
-				"name": "AEX Poly 4",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/h4Qnv5V.jpg",
-				"thumbUrl": "https://i.imgur.com/UIlmhnI.png",
-				"name": "AEX Poly 3",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/3dmT821.jpg",
-				"thumbUrl": "http://i.imgur.com/rBOMiFo.png",
-				"name": "AEX Poly 2",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/WO3vfxi.jpg",
-				"thumbUrl": "http://i.imgur.com/NBEqMIc.png",
-				"name": "AEX Poly",
-                "category": "Poly,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/P6zFHsX.png",
-				"thumbUrl": "http://i.imgur.com/Qf5uKCj.png",
-				"name": "AEX Grains 6",
-                "category": "Dark,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/5lBZdqO.png",
-				"thumbUrl": "http://i.imgur.com/QNQWe22.png",
-				"name": "AEX Grains 5",
-                "category": "Dark,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/5iY7EvI.png",
-				"thumbUrl": "http://i.imgur.com/OZdNrZX.png",
-				"name": "AEX Grains 4",
-                "category": "Dark,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/4QLZAXs.png",
-				"thumbUrl": "http://i.imgur.com/0VKto8H.png",
-				"name": "AEX Grains 3",
-                "category": "Dark,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/EFIznoEg.png",
-				"thumbUrl": "http://i.imgur.com/ngop8tY.png",
-				"name": "AEX Grains 2",
-                "category": "Dark,Customworx"
-			},
-            {
-				"author": "Designed by Customworx",
-				"url": "http://i.imgur.com/FHECAx5.png",
-				"thumbUrl": "http://i.imgur.com/IlrLfHf.png",
-				"name": "AEX Grains",
-                "category": "Light,Customworx"
-			},
-            {
-				"author": "Designed by Efren Rodriguez",
-				"url": "http://i.imgur.com/QgJWVtT.jpg",
-				"thumbUrl": "http://i.imgur.com/EgByOwm.jpg",
-				"name": "Material Blue",
-                "category": "Material,Dark"
-			},
-            {
-				"author": "Designed by Efren Rodriguez",
-				"url": "http://i.imgur.com/rPdvh8L.jpg",
-				"thumbUrl": "http://i.imgur.com/W6zqaqp.jpg",
-				"name": "Material Green",
-                "category": "Material,Dark"
-			},
-            {
-				"author": "Designed by Efren Rodriguez",
-				"url": "http://i.imgur.com/XRdMttz.jpg",
-				"thumbUrl": "http://i.imgur.com/jaWoQGC.jpg",
-				"name": "Material Red",
-                "category": "Material,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/jN4vCvU.png",
-				"thumbUrl": "http://i.imgur.com/swba6KE.png",
-				"name": "Violet Glaze",
-                "category": "Colorful,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/TESuw98.png",
-				"thumbUrl": "http://i.imgur.com/TqxkuHb.png",
-				"name": "Black Glaze",
-                "category": "Colorful,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/REvmhw7.png",
-				"thumbUrl": "http://i.imgur.com/FMNqTB7.png",
-				"name": "Green Glaze",
-                "category": "Colorful,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/Hz60zzX.png",
-				"thumbUrl": "http://i.imgur.com/8whRKmF.png",
-				"name": "Blue Glaze",
-                "category": "Colorful,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/aibjtVr.png",
-				"thumbUrl": "http://i.imgur.com/8GOECcy.png",
-				"name": "Red Glaze",
-                "category": "Colorful,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/VFqB2Jn.png",
-				"thumbUrl": "http://i.imgur.com/grdp4nT.png",
-				"name": "Purple Glaze",
-                "category": "Colorful,Dark"
-			},
-            {
-				"author": "Designed by Rogerio Oliveira",
-				"url": "http://i.imgur.com/KkoJuCX.jpg",
-				"thumbUrl": "http://i.imgur.com/at36Ule.jpg",
-				"name": "Translucent Glass",
-                "category": "Other"
-			},
-            {
-				"author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/hG67IUW.jpg",
-				"thumbUrl": "http://i.imgur.com/2yLtMBR.jpg",
-				"name": "Neon Bubbles Black",
-                "category": "Material,Dark"
-			},
-            {
-				"author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/0TfIcaH.jpg",
-				"thumbUrl": "http://i.imgur.com/zUAkpQS.jpg",
-				"name": "Neon Bubbles Gray",
-                "category": "Material,Dark"
-			},
-            {
-				"author": "Designed by Bad Boy",
-				"url": "http://i.imgur.com/lFDNdpj.png",
-				"thumbUrl": "http://i.imgur.com/miolPcU.png",
-				"name": "Material Brown",
-                "category": "Material,Colorful"
-			},
-			{
-				"author": "Designed by Bad Boy",
-				"url": "http://i.imgur.com/SyY3gEa.png",
-				"thumbUrl": "http://i.imgur.com/SyY3gEa.png",
-				"name": "Material Blue",
-                "category": "Material,Colorful"
-			},
-            {
-				"author": "Designed by Gabriel Bercelli",
-				"url": "http://i.imgur.com/oDKlOEQ.jpg",
-				"thumbUrl": "http://i.imgur.com/RPgYoow.jpg",
-				"name": "Material Park",
-                "category": "Material,Colorful,Dark"
-			},
-            {
-				"author": "Designed by Gabriel Bercelli",
-				"url": "http://i.imgur.com/F9lcjcn.png",
-				"thumbUrl": "http://i.imgur.com/hBCt6ds.png",
-				"name": "Bubbles",
-                "category": "Colorful"
-			},
-            {
-				"author": "Designed by Gabriel Bercelli",
-				"url": "http://i.imgur.com/DsAQI2x.png",
-				"thumbUrl": "http://i.imgur.com/Al1ipUF.png",
-				"name": "Moon",
-                "category": "Dark,SciFi"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/EQuFOK7.png",
-				"thumbUrl": "http://i.imgur.com/bKp5LeN.png",
-				"name": "Day",
-                "category": "Light"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/C6n94QW.png",
-				"thumbUrl": "http://i.imgur.com/UeSHEdP.png",
-				"name": "PC",
-                "category": "Colorful,SciFi"
-			},
-			{
-				"author": "Designed by Krapk",
-				"url": "http://i.imgur.com/7B9IOEy.png",
-				"thumbUrl": "http://i.imgur.com/7b3dekf.png",
-				"name": "Pitch Black",
-                "category": "Dark,Material"
-			},
-			{
-				"author": "Designed by Gabriel Bercelli",
-				"url": "http://i.imgur.com/aXy9xEH.png",
-				"thumbUrl": "http://i.imgur.com/Ccpy7Th.png",
-				"name": "Starwars",
-                "category": "SciFi,Light"
-			},
-            {
-				"author": "Designed by Krapk",
-				"url": "http://i.imgur.com/gKXQkoF.jpg",
-				"thumbUrl": "http://i.imgur.com/9FPQNf3.jpg",
-				"name": "Watchdog",
-                "category": "SciFi,Dark"
-			},
-            {
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/CSqjiWI.png",
-				"thumbUrl": "http://i.imgur.com/W9Jt73h.png",
-				"name": "Alien",
-                "category": "SciFi,Colorful"
-		    },
-			{    
-			    "author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/QQPJHQY.jpg",
-				"thumbUrl": "http://i.imgur.com/QQPJHQY.jpg",
-				"name": "AEX Pink",
-                "category": "Material, Dark"
-			},
-			{    
-			    "author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/rEQPpkD.jpg",
-				"thumbUrl": "http://i.imgur.com/rEQPpkD.jpg",
-				"name": "AEX Yellow",
-                "category": "Material, Dark"
-			},
-			{    
-			    "author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/f6gS0Ke.jpg",
-				"thumbUrl": "http://i.imgur.com/f6gS0Ke.jpg",
-				"name": "AEX Red",
-                "category": "Material, Dark"
-			},
-			{    
-			    "author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/7W19bs0.jpg",
-				"thumbUrl": "http://i.imgur.com/7W19bs0.jpg",
-				"name": "AEX iBlue",
-                "category": "Material, Dark"
-			},
-			{    
-			    "author": "Designed by Azeem Shaikh",
-				"url": "http://i.imgur.com/lpWbfut.jpg",
-				"thumbUrl": "http://i.imgur.com/lpWbfut.jpg",
-				"name": "Iron Man",
-                "category": "SciFi"
-			},
-			{
-			    "author": "Designed by Bad Boy",
-				"url": "http://i.imgur.com/xhynZmh.png",
-				"thumbUrl": "http://i.imgur.com/xhynZmh.png",
-				"name": "Logo Remake Blue"
-                "category": "SciFi"
-		    },
-			{
-			    "author": "Designed by Bad Boy",
-				"url": "http://i.imgur.com/8paBKoN.png",
-				"thumbUrl": "http://i.imgur.com/8paBKoN.png",
-				"name": "Logo Remak Dark Red"
-                "category": "Colorful"
-		    },
-			{
-			    "author": "Designed by Bad Boy",
-				"url": "http://i.imgur.com/mjJAgBj.png",
-				"thumbUrl": "http://i.imgur.com/mjJAgBj.png",
-				"name": "Logo Remak Red"
-                "category": "Colorful"
-		    },
-			{
-			    "author": "Designed by Bad Boy",
-				"url": "http://i.imgur.com/SIHNVGp.png",
-				"thumbUrl": "http://i.imgur.com/SIHNVGp.png",
-				"name": "Logo Remake Dark Blue"
-                "category": "Colorful"
-		    },
-			{
-			    "author": "Designed by Hamza Badar"
-				"url": "http://i.imgur.com/KM62sO5.png",
-				"thumbUrl": "http://i.imgur.com/KM62sO5.png",
-				"name": "AEX Moon Light"
-                "category": "Dark"
-		    },
-			{
-			    "author": "Designed by Custom Wallz"
-				"url": "http://i.imgur.com/PM2ybbf.jpg",
-				"thumbUrl": "http://i.imgur.com/PM2ybbf.jpg",
-				"name": "Saffron Extended by Savio"
-                "category": "Colorful"
-		    },
-			{
-			    "author": "Designed by Custom Wallz"
-				"url": "http://i.imgur.com/TJYOmeW.jpg",
-				"thumbUrl": "http://i.imgur.com/TJYOmeW.jpg",
-				"name": "Blue Extended by Savio"
-                "category": "Colorful"
-		    },
-			{
-			    "author": "Designed by Custom Wallz"
-				"url": "http://i.imgur.com/PClNRIr.jpg",
-				"thumbUrl": "http://i.imgur.com/PClNRIr.jpg",
-				"name": "Green Extended by Savio"
-                "category": "Colorful"
-		    },
-			{
-				"author": "Designed by Renan Lopes",
-				"url": "http://i.imgur.com/L76xfkA.png",
-				"thumbUrl": "http://i.imgur.com/nZepzfI.png",
-				"name": "German Soldier",
-                "category": "Light"
-			}
-		]
-}
+	"Categories": [{
+			"name": "Light"
+		},
+		{
+			"name": "Dark"
+		},
+		{
+			"name": "Colorful"
+		},
+		{
+			"name": "SciFi"
+		},
+		{
+			"name": "Customworx"
+		},
+		{
+			"name": "Material"
+		},
+		{
+			"name": "Poly"
+		},
+		{
+			"name": "Other"
+		}
+	],
+
+	"Wallpapers": [{
+			"author": "Designed by ishubhamsingh",
+			"url": "http://i.imgur.com/qA8wox8.png",
+			"thumbUrl": "http://i.imgur.com/73vUodT.png",
+			"name": "ArtWork",
+			"category": "Dark,Other"
+		},
+		{
+			"author": "Designed by Krapk",
+			"url": "http://i.imgur.com/zp6BVMw.jpg",
+			"thumbUrl": "http://i.imgur.com/zp6BVMw.jpg",
+			"name": "Rocket",
+			"category": "SciFi,Colorful"
+		},
+		{
+			"author": "Designed by Adithya Jayan",
+			"url": "http://i.imgur.com/ac3XS3A.jpg",
+			"thumbUrl": "http://i.imgur.com/ac3XS3A.jpg",
+			"name": "Energy Blue",
+			"category": "Material"
+		},
+		{
+			"author": "Designed by Adithya Jayan",
+			"url": "http://i.imgur.com/HwgvVJs.jpg",
+			"thumbUrl": "http://i.imgur.com/HwgvVJs.jpg",
+			"name": "Energy Green",
+			"category": "Material"
+		},
+		{
+			"author": "Designed by Adithya Jayan",
+			"url": "http://i.imgur.com/pw1HrfR.jpg",
+			"thumbUrl": "http://i.imgur.com/pw1HrfR.jpg",
+			"name": "Energy Yellow",
+			"category": "Material"
+		},
+		{
+			"author": "Designed by Adithya Jayan",
+			"url": "http://i.imgur.com/gPCVPGJ.jpg",
+			"thumbUrl": "http://i.imgur.com/gPCVPGJ.jpg",
+			"name": "Energy Red",
+			"category": "Material"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/2SSzDG5.jpg",
+			"thumbUrl": "http://i.imgur.com/czjq5NN.png",
+			"name": "AEX Poly 7",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/LMqcmKr.jpg",
+			"thumbUrl": "http://i.imgur.com/Vg4oNWm.png",
+			"name": "AEX Poly 6",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/HAUDYhU.jpg",
+			"thumbUrl": "http://i.imgur.com/dfHcfay.png",
+			"name": "AEX Poly 5",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/gIiwCqg.jpg",
+			"thumbUrl": "http://i.imgur.com/wMsQL6P.png",
+			"name": "AEX Poly 4",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/h4Qnv5V.jpg",
+			"thumbUrl": "https://i.imgur.com/UIlmhnI.png",
+			"name": "AEX Poly 3",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/3dmT821.jpg",
+			"thumbUrl": "http://i.imgur.com/rBOMiFo.png",
+			"name": "AEX Poly 2",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/WO3vfxi.jpg",
+			"thumbUrl": "http://i.imgur.com/NBEqMIc.png",
+			"name": "AEX Poly",
+			"category": "Poly,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/P6zFHsX.png",
+			"thumbUrl": "http://i.imgur.com/Qf5uKCj.png",
+			"name": "AEX Grains 6",
+			"category": "Dark,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/5lBZdqO.png",
+			"thumbUrl": "http://i.imgur.com/QNQWe22.png",
+			"name": "AEX Grains 5",
+			"category": "Dark,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/5iY7EvI.png",
+			"thumbUrl": "http://i.imgur.com/OZdNrZX.png",
+			"name": "AEX Grains 4",
+			"category": "Dark,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/4QLZAXs.png",
+			"thumbUrl": "http://i.imgur.com/0VKto8H.png",
+			"name": "AEX Grains 3",
+			"category": "Dark,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/EFIznoEg.png",
+			"thumbUrl": "http://i.imgur.com/ngop8tY.png",
+			"name": "AEX Grains 2",
+			"category": "Dark,Customworx"
+		},
+		{
+			"author": "Designed by Customworx",
+			"url": "http://i.imgur.com/FHECAx5.png",
+			"thumbUrl": "http://i.imgur.com/IlrLfHf.png",
+			"name": "AEX Grains",
+			"category": "Light,Customworx"
+		},
+		{
+			"author": "Designed by Efren Rodriguez",
+			"url": "http://i.imgur.com/QgJWVtT.jpg",
+			"thumbUrl": "http://i.imgur.com/EgByOwm.jpg",
+			"name": "Material Blue",
+			"category": "Material,Dark"
+		},
+		{
+			"author": "Designed by Efren Rodriguez",
+			"url": "http://i.imgur.com/rPdvh8L.jpg",
+			"thumbUrl": "http://i.imgur.com/W6zqaqp.jpg",
+			"name": "Material Green",
+			"category": "Material,Dark"
+		},
+		{
+			"author": "Designed by Efren Rodriguez",
+			"url": "http://i.imgur.com/XRdMttz.jpg",
+			"thumbUrl": "http://i.imgur.com/jaWoQGC.jpg",
+			"name": "Material Red",
+			"category": "Material,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/jN4vCvU.png",
+			"thumbUrl": "http://i.imgur.com/swba6KE.png",
+			"name": "Violet Glaze",
+			"category": "Colorful,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/TESuw98.png",
+			"thumbUrl": "http://i.imgur.com/TqxkuHb.png",
+			"name": "Black Glaze",
+			"category": "Colorful,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/REvmhw7.png",
+			"thumbUrl": "http://i.imgur.com/FMNqTB7.png",
+			"name": "Green Glaze",
+			"category": "Colorful,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/Hz60zzX.png",
+			"thumbUrl": "http://i.imgur.com/8whRKmF.png",
+			"name": "Blue Glaze",
+			"category": "Colorful,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/aibjtVr.png",
+			"thumbUrl": "http://i.imgur.com/8GOECcy.png",
+			"name": "Red Glaze",
+			"category": "Colorful,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/VFqB2Jn.png",
+			"thumbUrl": "http://i.imgur.com/grdp4nT.png",
+			"name": "Purple Glaze",
+			"category": "Colorful,Dark"
+		},
+		{
+			"author": "Designed by Rogerio Oliveira",
+			"url": "http://i.imgur.com/KkoJuCX.jpg",
+			"thumbUrl": "http://i.imgur.com/at36Ule.jpg",
+			"name": "Translucent Glass",
+			"category": "Other"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/hG67IUW.jpg",
+			"thumbUrl": "http://i.imgur.com/2yLtMBR.jpg",
+			"name": "Neon Bubbles Black",
+			"category": "Material,Dark"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/0TfIcaH.jpg",
+			"thumbUrl": "http://i.imgur.com/zUAkpQS.jpg",
+			"name": "Neon Bubbles Gray",
+			"category": "Material,Dark"
+		},
+		{
+			"author": "Designed by Bad Boy",
+			"url": "http://i.imgur.com/lFDNdpj.png",
+			"thumbUrl": "http://i.imgur.com/miolPcU.png",
+			"name": "Material Brown",
+			"category": "Material,Colorful"
+		},
+		{
+			"author": "Designed by Bad Boy",
+			"url": "http://i.imgur.com/SyY3gEa.png",
+			"thumbUrl": "http://i.imgur.com/SyY3gEa.png",
+			"name": "Material Blue",
+			"category": "Material,Colorful"
+		},
+		{
+			"author": "Designed by Gabriel Bercelli",
+			"url": "http://i.imgur.com/oDKlOEQ.jpg",
+			"thumbUrl": "http://i.imgur.com/RPgYoow.jpg",
+			"name": "Material Park",
+			"category": "Material,Colorful,Dark"
+		},
+		{
+			"author": "Designed by Gabriel Bercelli",
+			"url": "http://i.imgur.com/F9lcjcn.png",
+			"thumbUrl": "http://i.imgur.com/hBCt6ds.png",
+			"name": "Bubbles",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Gabriel Bercelli",
+			"url": "http://i.imgur.com/DsAQI2x.png",
+			"thumbUrl": "http://i.imgur.com/Al1ipUF.png",
+			"name": "Moon",
+			"category": "Dark,SciFi"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/EQuFOK7.png",
+			"thumbUrl": "http://i.imgur.com/bKp5LeN.png",
+			"name": "Day",
+			"category": "Light"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/C6n94QW.png",
+			"thumbUrl": "http://i.imgur.com/UeSHEdP.png",
+			"name": "PC",
+			"category": "Colorful,SciFi"
+		},
+		{
+			"author": "Designed by Krapk",
+			"url": "http://i.imgur.com/7B9IOEy.png",
+			"thumbUrl": "http://i.imgur.com/7b3dekf.png",
+			"name": "Pitch Black",
+			"category": "Dark,Material"
+		},
+		{
+			"author": "Designed by Gabriel Bercelli",
+			"url": "http://i.imgur.com/aXy9xEH.png",
+			"thumbUrl": "http://i.imgur.com/Ccpy7Th.png",
+			"name": "Starwars",
+			"category": "SciFi,Light"
+		},
+		{
+			"author": "Designed by Krapk",
+			"url": "http://i.imgur.com/gKXQkoF.jpg",
+			"thumbUrl": "http://i.imgur.com/9FPQNf3.jpg",
+			"name": "Watchdog",
+			"category": "SciFi,Dark"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/CSqjiWI.png",
+			"thumbUrl": "http://i.imgur.com/W9Jt73h.png",
+			"name": "Alien",
+			"category": "SciFi,Colorful"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/QQPJHQY.jpg",
+			"thumbUrl": "http://i.imgur.com/QQPJHQY.jpg",
+			"name": "AEX Pink",
+			"category": "Material, Dark"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/rEQPpkD.jpg",
+			"thumbUrl": "http://i.imgur.com/rEQPpkD.jpg",
+			"name": "AEX Yellow",
+			"category": "Material, Dark"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/f6gS0Ke.jpg",
+			"thumbUrl": "http://i.imgur.com/f6gS0Ke.jpg",
+			"name": "AEX Red",
+			"category": "Material, Dark"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/7W19bs0.jpg",
+			"thumbUrl": "http://i.imgur.com/7W19bs0.jpg",
+			"name": "AEX iBlue",
+			"category": "Material, Dark"
+		},
+		{
+			"author": "Designed by Azeem Shaikh",
+			"url": "http://i.imgur.com/lpWbfut.jpg",
+			"thumbUrl": "http://i.imgur.com/lpWbfut.jpg",
+			"name": "Iron Man",
+			"category": "SciFi"
+		},
+		{
+			"author": "Designed by Bad Boy",
+			"url": "http://i.imgur.com/xhynZmh.png",
+			"thumbUrl": "http://i.imgur.com/xhynZmh.png",
+			"name": "Logo Remake Blue",
+			"category": "SciFi"
+		},
+		{
+			"author": "Designed by Bad Boy",
+			"url": "http://i.imgur.com/8paBKoN.png",
+			"thumbUrl": "http://i.imgur.com/8paBKoN.png",
+			"name": "Logo Remake Dark Red",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Bad Boy",
+			"url": "http://i.imgur.com/mjJAgBj.png",
+			"thumbUrl": "http://i.imgur.com/mjJAgBj.png",
+			"name": "Logo Remake Red",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Bad Boy",
+			"url": "http://i.imgur.com/SIHNVGp.png",
+			"thumbUrl": "http://i.imgur.com/SIHNVGp.png",
+			"name": "Logo Remake Dark Blue",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Hamza Badar",
+			"url": "http://i.imgur.com/KM62sO5.png",
+			"thumbUrl": "http://i.imgur.com/KM62sO5.png",
+			"name": "AEX Moon Light",
+			"category": "Dark"
+		},
+		{
+			"author": "Designed by Custom Wallz",
+			"url": "http://i.imgur.com/PM2ybbf.jpg",
+			"thumbUrl": "http://i.imgur.com/PM2ybbf.jpg",
+			"name": "Saffron Extended by Savio",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Custom Wallz",
+			"url": "http://i.imgur.com/TJYOmeW.jpg",
+			"thumbUrl": "http://i.imgur.com/TJYOmeW.jpg",
+			"name": "Blue Extended by Savio",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Custom Wallz",
+			"url": "http://i.imgur.com/PClNRIr.jpg",
+			"thumbUrl": "http://i.imgur.com/PClNRIr.jpg",
+			"name": "Green Extended by Savio",
+			"category": "Colorful"
+		},
+		{
+			"author": "Designed by Renan Lopes",
+			"url": "http://i.imgur.com/L76xfkA.png",
+			"thumbUrl": "http://i.imgur.com/nZepzfI.png",
+			"name": "German Soldier",
+			"category": "Light"
+		}
+	]
