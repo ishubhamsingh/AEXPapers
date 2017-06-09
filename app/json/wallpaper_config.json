@@ -247,10 +247,17 @@
                 "category": "Material,Dark"
 			},
             {
-				"author": "Designed by Gabriel Bercelli",
+				"author": "Designed by Bad Boy",
 				"url": "http://i.imgur.com/lFDNdpj.png",
 				"thumbUrl": "http://i.imgur.com/miolPcU.png",
 				"name": "Material Brown",
+                "category": "Material,Colorful"
+			},
+			{
+				"author": "Designed by Bad Boy",
+				"url": "http://i.imgur.com/SyY3gEa.png",
+				"thumbUrl": "http://i.imgur.com/SyY3gEa.png",
+				"name": "Material Blue",
                 "category": "Material,Colorful"
 			},
             {
@@ -349,9 +356,44 @@
 				"url": "http://i.imgur.com/lpWbfut.jpg",
 				"thumbUrl": "http://i.imgur.com/lpWbfut.jpg",
 				"name": "Iron Man",
-                "category": "SciFi"
+                "category": "Colorful"
 			},
-            {
+			{
+			    "author": "Designed by Bad Boy",
+				"url": "http://i.imgur.com/xhynZmh.png",
+				"thumbUrl": "http://i.imgur.com/xhynZmh.png",
+				"name": "Logo Remake Blue"
+                "category": "SciFi"
+		    },
+			{
+			    "author": "Designed by Bad Boy",
+				"url": "http://i.imgur.com/8paBKoN.png",
+				"thumbUrl": "http://i.imgur.com/8paBKoN.png",
+				"name": "Logo Remak Dark Red"
+                "category": "Colorful"
+		    },
+			{
+			    "author": "Designed by Bad Boy",
+				"url": "http://i.imgur.com/mjJAgBj.png",
+				"thumbUrl": "http://i.imgur.com/mjJAgBj.png",
+				"name": "Logo Remak Red"
+                "category": "Colorful"
+		    },
+			{
+			    "author": "Designed by Bad Boy",
+				"url": "http://i.imgur.com/SIHNVGp.png",
+				"thumbUrl": "http://i.imgur.com/SIHNVGp.png",
+				"name": "Logo Remake Dark Blue"
+                "category": "Colorful"
+		    },
+			{
+			    "author": "Designed by Hamza Badar"
+				"url": "http://i.imgur.com/KM62sO5.png",
+				"thumbUrl": "http://i.imgur.com/KM62sO5.png",
+				"name": "AEX Moon Light"
+                "category": "Dark"
+		    },
+			{
 				"author": "Designed by Renan Lopes",
 				"url": "http://i.imgur.com/L76xfkA.png",
 				"thumbUrl": "http://i.imgur.com/nZepzfI.png",
