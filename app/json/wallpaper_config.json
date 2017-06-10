@@ -14,6 +14,9 @@
 		{
 			"name": "Customworx"
 		},
+	        {
+			"name": "Custom Wallz"
+		},
 		{
 			"name": "Material"
 		},
@@ -261,7 +264,7 @@
 			"url": "http://i.imgur.com/oDKlOEQ.jpg",
 			"thumbUrl": "http://i.imgur.com/RPgYoow.jpg",
 			"name": "Material Park",
-			"category": "Material,Colorful,Dark"
+			"category": "Material,Colorful"
 		},
 		{
 			"author": "Designed by Gabriel Bercelli",
@@ -324,28 +327,28 @@
 			"url": "http://i.imgur.com/QQPJHQY.jpg",
 			"thumbUrl": "http://i.imgur.com/QQPJHQY.jpg",
 			"name": "AEX Pink",
-			"category": "Material, Dark"
+			"category": "Material,Dark"
 		},
 		{
 			"author": "Designed by Azeem Shaikh",
 			"url": "http://i.imgur.com/rEQPpkD.jpg",
 			"thumbUrl": "http://i.imgur.com/rEQPpkD.jpg",
 			"name": "AEX Yellow",
-			"category": "Material, Dark"
+			"category": "Material,Dark"
 		},
 		{
 			"author": "Designed by Azeem Shaikh",
 			"url": "http://i.imgur.com/f6gS0Ke.jpg",
 			"thumbUrl": "http://i.imgur.com/f6gS0Ke.jpg",
 			"name": "AEX Red",
-			"category": "Material, Dark"
+			"category": "Material,Dark"
 		},
 		{
 			"author": "Designed by Azeem Shaikh",
 			"url": "http://i.imgur.com/7W19bs0.jpg",
 			"thumbUrl": "http://i.imgur.com/7W19bs0.jpg",
 			"name": "AEX iBlue",
-			"category": "Material, Dark"
+			"category": "Material,Dark"
 		},
 		{
 			"author": "Designed by Azeem Shaikh",
@@ -359,7 +362,7 @@
 			"url": "http://i.imgur.com/xhynZmh.png",
 			"thumbUrl": "http://i.imgur.com/xhynZmh.png",
 			"name": "Logo Remake Blue",
-			"category": "SciFi"
+			"category": "Colorful"
 		},
 		{
 			"author": "Designed by Bad Boy",
@@ -394,21 +397,21 @@
 			"url": "http://i.imgur.com/PM2ybbf.jpg",
 			"thumbUrl": "http://i.imgur.com/PM2ybbf.jpg",
 			"name": "Saffron Extended by Savio",
-			"category": "Colorful"
+			"category": "Colorful,Custom Wallz"
 		},
 		{
 			"author": "Designed by Custom Wallz",
 			"url": "http://i.imgur.com/TJYOmeW.jpg",
 			"thumbUrl": "http://i.imgur.com/TJYOmeW.jpg",
 			"name": "Blue Extended by Savio",
-			"category": "Colorful"
+			"category": "Colorful,Custom Wallz"
 		},
 		{
 			"author": "Designed by Custom Wallz",
 			"url": "http://i.imgur.com/PClNRIr.jpg",
 			"thumbUrl": "http://i.imgur.com/PClNRIr.jpg",
 			"name": "Green Extended by Savio",
-			"category": "Colorful"
+			"category": "Colorful,Custom Wallz"
 		},
 		{
 			"author": "Designed by Renan Lopes",
