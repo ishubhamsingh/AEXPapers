@@ -29,6 +29,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dm.wallpaper.board.helpers.TypefaceHelper;
 import com.danimahardhika.android.helpers.animation.AnimationHelper;
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.DrawableHelper;
@@ -44,7 +45,6 @@ import com.dm.wallpaper.board.helpers.LocaleHelper;
 import com.dm.wallpaper.board.helpers.TapIntroHelper;
 import com.dm.wallpaper.board.helpers.ViewHelper;
 import com.dm.wallpaper.board.helpers.WallpaperHelper;
-import com.dm.wallpaper.board.items.Wallpaper;
 import com.dm.wallpaper.board.preferences.Preferences;
 import com.dm.wallpaper.board.utils.Extras;
 import com.dm.wallpaper.board.utils.ImageConfig;
@@ -275,7 +275,7 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
                             .autoDismiss(false)
                             .maxLines(4)
                             .fitSystemWindow()
-                            .typeface("Font-Regular.ttf", "Font-Bold.ttf")
+                            .typeface(TypefaceHelper.getRegular(this), TypefaceHelper.getBold(this))
                             .content(String.format(getResources().getString(R.string.wallpaper_download_exist),
                                     ("\"" +mName + WallpaperHelper.IMAGE_EXTENSION+ "\"")))
                             .icon(R.drawable.ic_toolbar_download)
