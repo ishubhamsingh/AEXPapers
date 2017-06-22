@@ -76,12 +76,13 @@ public class Setting {
         mFooter = footer;
     }
 
-   public enum Type {
-       HEADER,
-       CACHE,
-       THEME,
-       WALLPAPER,
-       COLORED_CARD,
-       RESET_TUTORIAL
-   }
+    public enum Type {
+        HEADER,
+        CACHE,
+        THEME,
+        WALLPAPER,
+        LANGUAGE,
+        COLORED_CARD,
+        RESET_TUTORIAL
+    }
 }
