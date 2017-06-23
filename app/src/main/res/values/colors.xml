@@ -27,10 +27,6 @@
     <color name="navigationViewSelectedBackground">#00000000</color>
     <color name="navigationViewSelectedBackgroundDark">#00000000</color>
 
-    <!-- Popup Bubble -->
-    <color name="popupBubble">#cc101010</color>
-    <color name="popupBubbleText">#FFFFFF</color>
-
     <!-- Card -->
     <color name="cardBackground">#cc101010</color>
     <color name="cardBackgroundDark">#ff101010</color>
@@ -38,8 +34,6 @@
     <!-- Ripple -->
     <color name="rippleColor">#4DFFFFFF</color>
     <color name="rippleColorDark">#4DFFFFFF</color>
-    <color name="rippleAccent">#44787878</color>
-    <color name="rippleAccentDark">#44787878</color>
 
     <!-- Attributes -->
     <color name="mainBackground">#80000000</color>

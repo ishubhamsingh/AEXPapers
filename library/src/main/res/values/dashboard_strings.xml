@@ -9,7 +9,7 @@
     <string name="navigation_view_donate">Support Development</string>
 
     <string name="navigation_view_share">Share App</string>
-    <string name="navigation_view_rate">Rate &amp; Review</string>
+    <string name="navigation_view_rate">Submit Your Wall</string>
 
     <!-- Share app -->
     <string name="share_app_subject">Yo! Check out %s</string>

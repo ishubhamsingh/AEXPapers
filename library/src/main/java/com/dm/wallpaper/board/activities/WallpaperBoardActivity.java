@@ -417,13 +417,13 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
                         getResources().getString(R.string.app_name)));
                 intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_app_body,
                         getResources().getString(R.string.app_name),
-                        "https://play.google.com/store/apps/details?id=" +getPackageName()));
+                        "https://plus.google.com/communities/106726906578669931141"));
                 startActivity(Intent.createChooser(intent, getResources().getString(R.string.email_client)));
                 return false;
 
             } else if (id == R.id.navigation_view_rate) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(
-                        "https://play.google.com/store/apps/details?id=" +getPackageName()));
+                        "https://plus.google.com/communities/106726906578669931141"));
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 startActivity(intent);
                 return false;

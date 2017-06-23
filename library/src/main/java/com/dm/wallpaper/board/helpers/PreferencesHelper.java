@@ -86,7 +86,7 @@ public class PreferencesHelper {
     }
 
     public boolean isColoredWallpapersCard() {
-        return getSharedPreferences().getBoolean(KEY_COLORED_WALLPAPERS_CARD, true);
+        return getSharedPreferences().getBoolean(KEY_COLORED_WALLPAPERS_CARD, false);
     }
 
     public void setColoredWallpapersCard(boolean bool) {
