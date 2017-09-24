@@ -14,11 +14,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.dm.wallpaper.board.sample"
+        applicationId "org.aospextended.aexpapers"
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
-        versionCode 1
-        versionName "1.0"
+        versionCode 50
+        versionName "5.0"
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -44,5 +44,5 @@ dependencies {
      * 5. Clean project
      * 6. Done
      */
-    compile 'com.github.danimahardhika:wallpaperboard:1.3.1'
+    compile 'com.github.danimahardhika:wallpaperboard:1.5.0-b1'
 }
