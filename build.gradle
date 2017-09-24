@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         //noinspection GradleDependency
         classpath 'com.google.gms:google-services:3.0.0'
 
@@ -27,6 +28,7 @@ allprojects {
         MinSdk = 26
         TargetSdk = 26
         CompileSdk = 26
+        SupportLibrary = "25.3.1"
     }
 }
 
