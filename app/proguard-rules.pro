@@ -29,6 +29,11 @@
 -renamesourcefileattribute SourceFile
 -keepattributes SourceFile,LineNumberTable
 
+-ignorewarnings
+-keep class * {
+    public private *;
+}
+
 # LoganSquare JSON parser
 -keep class com.bluelinelabs.logansquare.** { *; }
 -keep @com.bluelinelabs.logansquare.annotation.JsonObject class *
