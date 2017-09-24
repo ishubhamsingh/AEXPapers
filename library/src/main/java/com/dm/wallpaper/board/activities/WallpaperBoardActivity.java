@@ -57,7 +57,6 @@ import com.dm.wallpaper.board.fragments.SettingsFragment;
 import com.dm.wallpaper.board.fragments.dialogs.InAppBillingFragment;
 import com.dm.wallpaper.board.helpers.ConfigurationHelper;
 import com.dm.wallpaper.board.helpers.InAppBillingHelper;
-
 import com.dm.wallpaper.board.helpers.LicenseCallbackHelper;
 import com.dm.wallpaper.board.helpers.LocaleHelper;
 import com.dm.wallpaper.board.items.InAppBilling;
@@ -66,7 +65,6 @@ import com.dm.wallpaper.board.preferences.Preferences;
 import com.dm.wallpaper.board.tasks.WallpapersLoaderTask;
 import com.dm.wallpaper.board.utils.Extras;
 import com.dm.wallpaper.board.utils.ImageConfig;
-import com.dm.wallpaper.board.utils.LogUtil;
 import com.dm.wallpaper.board.utils.Popup;
 import com.dm.wallpaper.board.utils.listeners.AppBarListener;
 import com.dm.wallpaper.board.utils.listeners.InAppBillingListener;
@@ -493,13 +491,13 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
                         getResources().getString(R.string.app_name)));
                 intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_app_body,
                         getResources().getString(R.string.app_name),
-                        "https://play.google.com/store/apps/details?id=" +getPackageName()));
+                        "https://plus.google.com/communities/106726906578669931141"));
                 startActivity(Intent.createChooser(intent, getResources().getString(R.string.email_client)));
                 return false;
 
             } else if (id == R.id.navigation_view_rate) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(
-                        "https://play.google.com/store/apps/details?id=" +getPackageName()));
+                        "https://plus.google.com/communities/106726906578669931141"));
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 startActivity(intent);
                 return false;

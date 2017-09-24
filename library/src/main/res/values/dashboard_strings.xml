@@ -9,7 +9,7 @@
     <string name="navigation_view_donate">Support Development</string>
 
     <string name="navigation_view_share">Share App</string>
-    <string name="navigation_view_rate">Rate &amp; Review</string>
+    <string name="navigation_view_rate">Submit Your Wall</string>
 
     <!-- Share app -->
     <string name="share_app_subject">Yo! Check out %s</string>
@@ -132,10 +132,6 @@
     <string name="pref_data_cache_size">Cache Size: %s</string>
     <string name="pref_data_cache_cleared">Cache Cleared</string>
     <string name="pref_data_cache_clear_dialog">Do you really want to clear cache?</string>
-
-    <string name="pref_theme_header">Theme</string>
-    <string name="pref_theme_dark">Dark Theme</string>
-    <string name="pref_theme_dark_desc">Switch between dark or light theme</string>
 
     <string name="pref_wallpaper_header">Wallpaper</string>
     <string name="pref_wallpaper_high_quality_preview">Wallpaper Preview Quality</string>
