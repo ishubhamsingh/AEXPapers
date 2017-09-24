@@ -35,7 +35,7 @@
     <!-- CONFIG: Wallpapers -->
 
     <!-- Wallpaper json link -->
-    <string name="wallpaper_json">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/json/wallpaper_config.json</string>
+    <string name="wallpaper_json">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers_json/master/wallpaper_config.json</string>
 
     <!-- Allow to download wallpaper
     * If disabled user only able to apply wallpaper from dashboard -->
