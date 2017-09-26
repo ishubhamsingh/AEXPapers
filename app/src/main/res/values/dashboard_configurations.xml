@@ -25,7 +25,7 @@
     <string name="muzei_art_source_desc">Walls branded for AospExtended ROM</string>
 
     <!-- Muzei base color -->
-    <color name="muzei_color">#F44336</color>
+    <color name="muzei_color">#21ef8b</color>
 
     <!-- CONFIG: TOOLBAR -->
 
@@ -52,7 +52,7 @@
     * ex: navigation_view_header.png -> navigation_view_header
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="navigation_view_header">#000000</string> -->
-    <string name="navigation_view_header">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/extra/navigation_view_header.png</string>
+    <string name="navigation_view_header">https://i.imgur.com/XdroJY2.png</string>
 
     <!-- Navigation view header text
     * Leave empty if you don't want to show any text -->
@@ -66,7 +66,7 @@
     * just put image name here without the extension (ex: about_image.png -> about_image)
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="about_image">#000000</string> -->
-    <string name="about_image">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/extra/navigation_view_header.png</string>
+    <string name="about_image">https://i.imgur.com/WitGboc.png</string>
 
     <!-- About profile image
     * If you want to use image from url, just put the url here

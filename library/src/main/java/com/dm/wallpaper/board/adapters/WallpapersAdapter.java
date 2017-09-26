@@ -124,9 +124,9 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Vi
         }
 
         int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
-        if (wallpaper.getColor() != 0) {
+        /*if (wallpaper.getColor() != 0) {
             color = ColorHelper.getTitleTextColor(wallpaper.getColor());
-        }
+        }*/
 
         setFavorite(holder.favorite, color, position, false);
 
@@ -136,12 +136,13 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Vi
                     public void onLoadingStarted(String imageUri, View view) {
                         super.onLoadingStarted(imageUri, view);
                         int color;
-                        if (wallpaper.getColor() == 0) {
+                        //Force CardBG color on Wallpaper Cards
+                       // if (wallpaper.getColor() == 0) {
                             color = ColorHelper.getAttributeColor(
                                     mContext, R.attr.card_background);
-                        } else {
+                        /*} else {
                             color = wallpaper.getColor();
-                        }
+                        }*/
 
                         int text = ColorHelper.getTitleTextColor(color);
                         holder.name.setTextColor(text);
