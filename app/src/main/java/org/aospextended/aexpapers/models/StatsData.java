@@ -3,6 +3,7 @@ package org.aospextended.aexpapers.models;
 import android.content.Context;
 import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 
 import org.aospextended.aexpapers.Constants;
 
@@ -17,17 +18,14 @@ public class StatsData {
     private String version;
     private String buildType;
     private String countryCode;
+    private String buildDate;
 
     public String getDevice() {
         return SystemProperties.get(Constants.KEY_DEVICE);
     }
 
     public void setDevice(String device) {
-        if(device!="") {
-            this.device = device;
-        } else {
-            this.device = "unknown";
-        }
+        this.device = TextUtils.isEmpty(device) ? "unknown" : device;
     }
 
     public String getModel() {
@@ -35,11 +33,7 @@ public class StatsData {
     }
 
     public void setModel(String model) {
-        if(model!="") {
-            this.model = model;
-        } else {
-            this.model = "unknown";
-        }
+        this.model = TextUtils.isEmpty(model) ? "unknown" : model;
     }
 
     public String getVersion() {
@@ -47,11 +41,7 @@ public class StatsData {
     }
 
     public void setVersion(String version) {
-        if(version!="") {
-            this.version = version;
-        } else {
-            this.version = "unknown";
-        }
+        this.version = TextUtils.isEmpty(version) ? "unknown" : version;
     }
 
     public String getBuildType() {
@@ -59,11 +49,7 @@ public class StatsData {
     }
 
     public void setBuildType(String buildType) {
-        if(buildType!="") {
-            this.buildType = buildType;
-        } else {
-            this.buildType = "unknown";
-        }
+        this.buildType = TextUtils.isEmpty(buildType) ? "unknown" : buildType;
     }
 
     public String getCountryCode(Context context) {
@@ -72,10 +58,14 @@ public class StatsData {
     }
 
     public void setCountryCode(String countryCode) {
-        if(countryCode!="") {
-            this.countryCode = countryCode;
-        } else {
-            this.countryCode = "unknown";
-        }
+        this.countryCode = TextUtils.isEmpty(countryCode) ? "unknown" : countryCode;
+    }
+
+    public String getBuildDate() {
+        return SystemProperties.get(Constants.KEY_BUILD_DATE);
+    }
+
+    public void setBuildDate(String buildDate) {
+        this.buildDate = TextUtils.isEmpty(buildDate) ? "unknown" : buildDate;
     }
 }
