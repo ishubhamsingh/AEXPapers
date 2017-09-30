@@ -138,7 +138,7 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Vi
                         int color;
                         //Force CardBG color on Wallpaper Cards
                        // if (wallpaper.getColor() == 0) {
-                            color = ColorHelper.getAttributeColor(
+                            color =  ColorHelper.getAttributeColor(
                                     mContext, R.attr.card_background);
                         /*} else {
                             color = wallpaper.getColor();
@@ -157,7 +157,7 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Vi
                             Palette.from(loadedImage).generate(palette -> {
                                 int vibrant = ColorHelper.getAttributeColor(
                                         mContext, R.attr.card_background);
-                                int color = palette.getVibrantColor(vibrant);
+                                int color = vibrant;
                                 if (color == vibrant)
                                     color = palette.getMutedColor(vibrant);
                                 holder.card.setCardBackgroundColor(color);
