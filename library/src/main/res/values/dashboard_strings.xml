@@ -23,6 +23,7 @@
     <string name="menu_wallpaper_crop">Crop Wallpaper</string>
     <string name="menu_apply_homescreen">Homescreen</string>
     <string name="menu_apply_lockscreen">Lockscreen</string>
+    <string name="menu_apply_homescreen_lockscreen">Homescreen &amp; Lockscreen</string>
 
     <string name="menu_sort">Sort by</string>
     <string name="menu_sort_latest">Latest</string>
@@ -89,7 +90,7 @@
         which may looks blurry and pixelated.</string>
     <string name="wallpaper_tooltip_preview_icon_tap">Tap this icon to previews wallpaper with original size</string>
     <string name="wallpaper_tooltip_dont_show">Don\'t show again</string>
-    
+
     <!-- Wallpaper Property -->
     <string name="wallpaper_property_name">Name: %s</string>
     <string name="wallpaper_property_author">Author: %s</string>
