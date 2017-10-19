@@ -517,6 +517,95 @@
 			"thumbUrl": "http://i.imgur.com/nZepzfI.png",
 			"name": "German Soldier",
 			"category": "Light"
-		}
+		},
+			  {
+			"author": "Designed by ElDainosor",
+			"url": "http://i.imgur.com/CXN1yi9.jpg",
+			"thumbUrl": "http://i.imgur.com/yCB6Tb6.jpg",
+			"name": "Minimalist Waves AEX",
+			"category": "Colorful,Other,Dark"
+		},
+	  {
+			"author": "Designed by ElDainosor",
+			"url": "http://i.imgur.com/0iqymi6.jpg",
+			"thumbUrl": "http://i.imgur.com/3R4R5Xx.jpg",
+			"name": "Neon AEX",
+			"category": "Colorful,Other,Dark"
+		},
+		{
+			"author": "Designed by Impulse",
+			"url": "https://i.imgur.com/lHgiWD5.jpg",
+			"thumbUrl": "https://i.imgur.com/lHgiWD5.jpg",
+			"name": "Code_Extended",
+			"category": "Other"
+		},
+		{
+			"author": "Captured/Edited by Anuj Triathi/Impulse",
+			"url": "https://i.imgur.com/wv8u2tf.jpg",
+			"thumbUrl": "https://i.imgur.com/wv8u2tf.jpg",
+			"name": "Code_Extended",
+			"category": "Other"
+		},
+		{
+			"author": "Captured/Edited by Anuj Triathi/Impulse",
+			"url": "https://i.imgur.com/Np9qbE1.jpg",
+			"thumbUrl": "https://i.imgur.com/Np9qbE1.jpg",
+			"name": "Code_Extended",
+			"category": "Other"
+		},
+		{	"author": "Designed by Custom Wallz",
+			"url": "http://i.imgur.com/XIaLVGQ.jpg",
+			"thumbUrl": "http://i.imgur.com/XIaLVGQ.jpg",
+			"name": "Mountain by hakrboy",
+			"category": "Custom Wallz,Dark"
+		 },
+		 { "author": "Designed by Custom Wallz",
+			 "url": "http://i.imgur.com/TbNdezQ.png",
+			 "thumbUrl": "http://i.imgur.com/TbNdezQ.png",
+			 "name": "AEX Metallic by Savio",
+			 "category": "Custom Wallz,Dark"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/C14K2Xn.png",
+				"thumbUrl": "http://i.imgur.com/C14K2Xn.png",
+				"name": "AEX #2 by Unfunny Guy",
+				"category": "Custom Wallz,Dark,Colorful"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/lweW16i.png",
+				"thumbUrl": "http://i.imgur.com/lweW16i.png",
+				"name": "AEX__sex_ by Unfunny Guy",
+				"category": "Custom Wallz,Dark"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/uTMD0M2.png",
+				"thumbUrl": "http://i.imgur.com/uTMD0M2.png",
+				"name": "AEX___ by Unfunny Guy",
+				"category": "Custom Wallz,Dark"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/aPQr4IZ.png",
+				"thumbUrl": "http://i.imgur.com/aPQr4IZ.png",
+				"name": "AEX MAT by Unfunny Guy",
+				"category": "Custom Wallz,Colorful"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/gp2gaOS.jpg",
+				"thumbUrl": "http://i.imgur.com/gp2gaOS.jpg",
+				"name": "AEX Dispersion by Savio",
+				"category": "Custom Wallz,Colorful"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/cCqsW6r.png",
+				"thumbUrl": "http://i.imgur.com/cCqsW6r.png",
+				"name": "AEX Dark by Savio",
+				"category": "Custom Wallz,Dark,Colorful"
+			},
+			{ "author": "Designed by Custom Wallz",
+				"url": "http://i.imgur.com/6wiC5xu.png",
+				"thumbUrl": "http://i.imgur.com/6wiC5xu.png",
+				"name": "AEX Dark #2 by Savio",
+				"category": "Custom Wallz,Colorful,Dark"
+			}
 	]
 }
