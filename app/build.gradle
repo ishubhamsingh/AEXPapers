@@ -13,11 +13,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.dm.wallpaper.board.sample"
+        applicationId "org.aospextended.aexpapers"
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
-        versionCode 1
-        versionName "1.0"
+        versionCode 5
+        versionName "5.0"
         vectorDrawables.useSupportLibrary = true
     }
 

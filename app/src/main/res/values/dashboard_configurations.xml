@@ -9,7 +9,7 @@
 
     <!-- CONFIG: APPLICATION NAME -->
 
-    <string name="app_name">WallpaperBoard Demo</string>
+    <string name="app_name">AEXPapers</string>
 
     <!-- CONFIG: DEFAULT THEME -->
 
@@ -19,10 +19,10 @@
     <!-- CONFIG: MUZEI -->
 
     <!-- Muzei art source name -->
-    <string name="muzei_art_source_name">Your Art Source Name</string>
+    <string name="muzei_art_source_name">AEXPapers</string>
 
     <!-- Muzei art source description -->
-    <string name="muzei_art_source_desc">Your Art Source Description</string>
+    <string name="muzei_art_source_desc">Walls branded for AospExtended ROM</string>
 
     <!-- Muzei base color -->
     <color name="muzei_color">#F44336</color>
@@ -30,7 +30,7 @@
     <!-- CONFIG: TOOLBAR -->
 
     <!-- Toolbar title -->
-    <string name="toolbar_title">Wallpaper Board</string>
+    <string name="toolbar_title">AEXPapers</string>
 
     <!-- CONFIG: Wallpapers -->
 
@@ -50,11 +50,11 @@
     * ex: navigation_view_header.png -> navigation_view_header
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="navigation_view_header">#000000</string> -->
-    <string name="navigation_view_header">https://c.slashgear.com/wp-content/uploads/2015/08/AndroidMarshmallow_10.jpg</string>
+    <string name="navigation_view_header">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/extra/navigation_view_header.png</string>
 
     <!-- Navigation view header text
     * Leave empty if you don't want to show any text -->
-    <string name="navigation_view_header_title">Wallpaper Board</string>
+    <string name="navigation_view_header_title">AEXPapers</string>
 
     <!-- CONFIG: ABOUT -->
 
@@ -64,22 +64,20 @@
     * just put image name here without the extension (ex: about_image.png -> about_image)
     * If you want to use solid color, you can put hex color code here
     * ex: <string name="about_image">#000000</string> -->
-    <string name="about_image">https://c.slashgear.com/wp-content/uploads/2015/08/AndroidMarshmallow_10.jpg</string>
+    <string name="about_image">https://raw.githubusercontent.com/ishubhamsingh/AEXPapers/7.x/app/extra/navigation_view_header.png</string>
 
     <!-- About profile image
     * If you want to use image from url, just put the url here
     * If you want to use image stored in project (drawable folder)
     * just put image name here without the extension (ex: about_profile_image.png -> about_profile_image) -->
-    <string name="about_profile_image">https://lh3.googleusercontent.com/-KBI2HdgNtN0/AAAAAAAAAAI/AAAAAAAABpc/icnuAgrjOT4/s256-p-rw-no/photo.jpg</string>
+    <string name="about_profile_image">https://github.com/AospExtended/manifest/raw/7.1.1/aex_logo.png</string>
 
     <!-- About title above description -->
-    <string name="about_title">Wallpaper Board</string>
+    <string name="about_title">AEXPapers</string>
 
     <!-- About description below title -->
     <string name="about_desc"><![CDATA[
-        About description supports html formatting, <b>bold description</b>,
-        <i>italic description</i>, <u>underline description</u>,
-        <a href="https://github.com/danimahardhika">link inside description</a>.
+         <b>A wallpaper app for user contributed AospExtended branded walls.
         ]]></string>
 
     <!-- Social link inside about
@@ -91,13 +89,10 @@
     * ex:
     * <string-array name="about_social_links"></string-array>-->
     <string-array name="about_social_links">
-        <item>https://www.instagram.com/_u/yourusername</item>
-        <item>https://twitter.com/</item>
-        <item>https://www.behance.net/</item>
-        <item>https://plus.google.com/u/1/+yourusername</item>
-        <item>http://github.com/yourusername</item>
-        <item>http://www.yourwebsite.com</item>
-        <item>your@email.com</item>
+        <item>https://plus.google.com/communities/106726906578669931141</item>
+        <item>http://github.com/AospExtended</item>
+        <item>http://aospextended.imgur.com/</item>
+        <item>aospextended@gmail.com</item>
     </string-array>
 
     <!-- Contributors dialog
