@@ -3,7 +3,7 @@ package org.aospextended.aexpapers;
 import org.aospextended.aexpapers.models.ServerRequest;
 import org.aospextended.aexpapers.models.ServerResponse;
 
-import retrofit2.Call;
+import io.reactivex.Observable;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
@@ -14,6 +14,6 @@ import retrofit2.http.POST;
 public interface RequestInterface {
 
     @POST("aexstats_api/")
-    Call<ServerResponse> operation(@Body ServerRequest request);
+    Observable<ServerResponse> operation(@Body ServerRequest request);
 
 }
