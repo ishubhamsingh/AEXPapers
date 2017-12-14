@@ -52,15 +52,17 @@ import com.dm.wallpaper.board.items.PopupItem;
 import com.dm.wallpaper.board.items.Wallpaper;
 import com.dm.wallpaper.board.items.WallpaperProperty;
 import com.dm.wallpaper.board.preferences.Preferences;
+import com.dm.wallpaper.board.tasks.LocalFavoritesRestoreTask;
 import com.dm.wallpaper.board.tasks.WallpaperApplyTask;
 import com.dm.wallpaper.board.tasks.WallpaperPropertiesLoaderTask;
 import com.dm.wallpaper.board.tasks.WallpaperPaletteLoaderTask;
 import com.dm.wallpaper.board.utils.Popup;
 import com.dm.wallpaper.board.utils.Extras;
 import com.dm.wallpaper.board.utils.ImageConfig;
-import com.dm.wallpaper.board.utils.LogUtil;
+import com.danimahardhika.android.helpers.core.utils.LogUtil;
 import com.dm.wallpaper.board.utils.Tooltip;
 import com.dm.wallpaper.board.utils.WallpaperDownloader;
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
 import com.kogitune.activitytransition.ActivityTransition;
 import com.kogitune.activitytransition.ExitActivityTransition;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -76,7 +78,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-import uk.co.senab.photoview.PhotoViewAttacher;
 
 /*
  * Wallpaper Board
@@ -160,8 +161,6 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
         if (bundle != null) {
             url = bundle.getString(Extras.EXTRA_URL);
         }
-
-        LogUtil.e("url: " +url);
 
         mWallpaper = Database.get(this).getWallpaper(url);
         if (mWallpaper == null) {
@@ -297,8 +296,6 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
                 url = bundle.getString(Extras.EXTRA_URL);
             }
 
-            LogUtil.e("url: " +url);
-
             Wallpaper wallpaper = Database.get(this).getWallpaper(url);
             if (wallpaper == null) {
                 return;
@@ -322,9 +319,12 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
 
     @Override
     protected void onDestroy() {
+        if (Preferences.get(this).isCropWallpaper()) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
+        }
+
         ImageLoader.getInstance().cancelDisplayTask(mImageView);
         WallpaperBoardApplication.sIsClickable = true;
-        if (mAttacher != null) mAttacher.cleanup();
         super.onDestroy();
     }
 
@@ -467,6 +467,10 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
                 WallpaperDownloader.prepare(this)
                         .wallpaper(mWallpaper)
                         .start();
+
+                if (!Preferences.get(this).isBackupRestored()) {
+                    LocalFavoritesRestoreTask.with(this).start(AsyncTask.THREAD_POOL_EXECUTOR);
+                }
             } else {
                 Toast.makeText(this, R.string.permission_storage_denied, Toast.LENGTH_LONG).show();
             }
@@ -642,7 +646,6 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
 
     private void loadWallpaper(String url) {
         if (mAttacher != null) {
-            mAttacher.cleanup();
             mAttacher = null;
         }
 
@@ -711,22 +714,20 @@ public class WallpaperBoardPreviewActivity extends AppCompatActivity implements 
                         .start();
 
                 if (loadedImage != null && mWallpaper.getColor() == 0) {
-                    try {
-                        Palette.from(loadedImage).generate(palette -> {
-                            int accent = ColorHelper.getAttributeColor(
-                                    WallpaperBoardPreviewActivity.this, R.attr.colorAccent);
-                            int color = palette.getVibrantColor(accent);
-                            if (color == accent)
-                                color = palette.getMutedColor(accent);
+                    Palette.from(loadedImage).generate(palette -> {
+                        if (isFinishing()) return;
 
-                            mWallpaper.setColor(color);
-                            Database.get(WallpaperBoardPreviewActivity.this).updateWallpaper(mWallpaper);
+                        int accent = ColorHelper.getAttributeColor(
+                                WallpaperBoardPreviewActivity.this, R.attr.colorAccent);
+                        int color = palette.getVibrantColor(accent);
+                        if (color == accent)
+                            color = palette.getMutedColor(accent);
 
-                            onWallpaperLoaded();
-                        });
-                    } catch (Exception ignored) {
+                        mWallpaper.setColor(color);
+                        Database.get(WallpaperBoardPreviewActivity.this).updateWallpaper(mWallpaper);
+
                         onWallpaperLoaded();
-                    }
+                    });
                     return;
                 }
 

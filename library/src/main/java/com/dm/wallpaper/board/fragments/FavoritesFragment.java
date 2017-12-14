@@ -1,7 +1,6 @@
 package com.dm.wallpaper.board.fragments;
 
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,7 +20,6 @@ import android.widget.TextView;
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.DrawableHelper;
 import com.danimahardhika.android.helpers.core.ViewHelper;
-import com.danimahardhika.android.helpers.core.WindowHelper;
 import com.dm.wallpaper.board.R;
 import com.dm.wallpaper.board.R2;
 import com.dm.wallpaper.board.adapters.WallpapersAdapter;
@@ -31,7 +29,7 @@ import com.dm.wallpaper.board.databases.Database;
 import com.dm.wallpaper.board.helpers.ConfigurationHelper;
 import com.dm.wallpaper.board.items.Wallpaper;
 import com.dm.wallpaper.board.preferences.Preferences;
-import com.dm.wallpaper.board.utils.LogUtil;
+import com.danimahardhika.android.helpers.core.utils.LogUtil;
 import com.dm.wallpaper.board.utils.listeners.NavigationListener;
 
 import java.util.ArrayList;
@@ -89,9 +87,6 @@ public class FavoritesFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ViewHelper.setupToolbar(mToolbar);
 
-        WindowHelper.setTranslucentStatusBar(getActivity(), false);
-        ColorHelper.setStatusBarColor(getActivity(), Color.TRANSPARENT, true);
-
         TextView textView = getActivity().findViewById(R.id.title);
         textView.setText(getActivity().getResources().getString(
                 R.string.navigation_view_favorites));
@@ -132,7 +127,6 @@ public class FavoritesFragment extends Fragment {
 
     @Override
     public void onDestroy() {
-        WindowHelper.setTranslucentStatusBar(getActivity(), true);
         if (mAsyncTask != null) {
             mAsyncTask.cancel(true);
         }

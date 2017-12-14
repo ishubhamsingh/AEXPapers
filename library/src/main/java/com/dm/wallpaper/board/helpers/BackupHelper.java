@@ -1,6 +1,10 @@
-package com.dm.wallpaper.board.utils;
+package com.dm.wallpaper.board.helpers;
 
-import android.util.Log;
+import android.content.Context;
+import android.os.Environment;
+import android.support.annotation.NonNull;
+
+import java.io.File;
 
 /*
  * Wallpaper Board
@@ -20,23 +24,14 @@ import android.util.Log;
  * limitations under the License.
  */
 
-public class LogUtil {
+public abstract class BackupHelper {
 
-    private static boolean sIsLoggingEnabled = false;
+    public static final String NOMEDIA = ".nomedia";
+    public static final String FILE_BACKUP = ".backup";
+    private static final String DIRECTORY_BACKUP = ".wallpaperboard";
 
-    private static final String TAG = "WallpaperBoard";
-
-    public static void setLoggingEnabled(boolean enabled) {
-        LogUtil.sIsLoggingEnabled = enabled;
-    }
-
-    public static void d(String message) {
-        if (LogUtil.sIsLoggingEnabled)
-            Log.d(TAG, message);
-    }
-
-    public static void e(String message) {
-        if (LogUtil.sIsLoggingEnabled)
-            Log.e(TAG, message);
+    public static File getDefaultDirectory(@NonNull Context context) {
+        return new File(Environment.getExternalStorageDirectory(),
+                DIRECTORY_BACKUP +"/"+ context.getPackageName());
     }
 }

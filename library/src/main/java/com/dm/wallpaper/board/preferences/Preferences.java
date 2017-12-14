@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 import com.dm.wallpaper.board.R;
 import com.dm.wallpaper.board.applications.WallpaperBoardApplication;
@@ -47,11 +48,13 @@ public class Preferences {
     private static final String KEY_WALLS_DIRECTORY = "wallpaper_download_directory";
     private static final String KEY_CROP_WALLPAPER = "crop_wallpaper";
     private static final String KEY_WALLPAPER_PREVIEW_INTRO = "wallpaper_preview_intro";
-    private static final String KEY_LANGUAGE_PREFERENCE = "language_preference";
     private static final String KEY_CURRENT_LOCALE = "current_locale";
+    private static final String KEY_LOCALE_DEFAULT = "localeDefault";
     private static final String KEY_WALLPAPER_TOOLTIP = "wallpaper_tooltip";
     private static final String KEY_SORT_BY = "sort_by";
     private static final String KEY_HIGH_QUALITY_PREVIEW = "high_quality_preview";
+    private static final String KEY_BACKUP = "backup";
+    private static final String KEY_PREVIOUS_BACKUP = "previousBackup";
 
     private static WeakReference<Preferences> mPreferences;
     private final Context mContext;
@@ -99,7 +102,7 @@ public class Preferences {
     }
 
     public boolean isDarkTheme() {
-        boolean useDarkTheme = mContext.getResources().getBoolean(R.bool.use_dark_theme);
+        boolean useDarkTheme = mPreferences.get().mContext.getResources().getBoolean(R.bool.use_dark_theme);
         boolean isThemingEnabled = WallpaperBoardApplication.getConfig().isDashboardThemingEnabled();
         if (!isThemingEnabled) return useDarkTheme;
         return getSharedPreferences().getBoolean(KEY_DARK_THEME, useDarkTheme);
@@ -154,7 +157,8 @@ public class Preferences {
     }
 
     public boolean isCropWallpaper() {
-        return getSharedPreferences().getBoolean(KEY_CROP_WALLPAPER, false);
+        return getSharedPreferences().getBoolean(KEY_CROP_WALLPAPER,
+                WallpaperBoardApplication.getConfig().isCropWallpaperEnabledByDefault());
     }
 
     public void setCropWallpaper(boolean bool) {
@@ -178,7 +182,30 @@ public class Preferences {
         getSharedPreferences().edit().putBoolean(KEY_HIGH_QUALITY_PREVIEW, bool).apply();
     }
 
+    public boolean isBackupRestored() {
+        return getSharedPreferences().getBoolean(KEY_BACKUP, false);
+    }
+
+    public void setBackupRestored(boolean bool) {
+        getSharedPreferences().edit().putBoolean(KEY_BACKUP, bool).apply();
+    }
+
+    public boolean isPreviousBackupExist() {
+        return getSharedPreferences().getBoolean(KEY_PREVIOUS_BACKUP, false);
+    }
+
+    public void setPreviousBackupExist(boolean bool) {
+        getSharedPreferences().edit().putBoolean(KEY_PREVIOUS_BACKUP, bool).apply();
+    }
+
     public Locale getCurrentLocale() {
+        if (isLocaleDefault()) {
+            Locale defaultLocale = getDefaultLocale();
+            if (defaultLocale != null) {
+                return defaultLocale;
+            }
+        }
+
         String code = getSharedPreferences().getString(KEY_CURRENT_LOCALE, "en_US");
         return LocaleHelper.getLocale(code);
     }
@@ -187,17 +214,18 @@ public class Preferences {
         getSharedPreferences().edit().putString(KEY_CURRENT_LOCALE, code).apply();
     }
 
-    public boolean isTimeToSetLanguagePreference() {
-        return getSharedPreferences().getBoolean(KEY_LANGUAGE_PREFERENCE, true);
+    public boolean isLocaleDefault() {
+        return getSharedPreferences().getBoolean(KEY_LOCALE_DEFAULT, true);
     }
 
-    private void setTimeToSetLanguagePreference(boolean bool) {
-        getSharedPreferences().edit().putBoolean(KEY_LANGUAGE_PREFERENCE, bool).apply();
+    public void setLocaleDefault(boolean bool) {
+        getSharedPreferences().edit().putBoolean(KEY_LOCALE_DEFAULT, bool).apply();
     }
 
-    public void setLanguagePreference() {
-        Locale locale = Locale.getDefault();
-        List<Language> languages = LocaleHelper.getAvailableLanguages(mPreferences.get().mContext);
+    @Nullable
+    private Locale getDefaultLocale() {
+        Locale locale = LocaleHelper.getSystem();
+        List<Language> languages = LocaleHelper.getAvailableLanguages(mContext);
 
         Locale currentLocale = null;
         for (Language language : languages) {
@@ -217,12 +245,7 @@ public class Preferences {
                 }
             }
         }
-
-        if (currentLocale != null) {
-            setCurrentLocale(currentLocale.toString());
-            LocaleHelper.setLocale(mPreferences.get().mContext);
-            setTimeToSetLanguagePreference(false);
-        }
+        return currentLocale;
     }
 
     public void setSortBy(PopupItem.Type type) {

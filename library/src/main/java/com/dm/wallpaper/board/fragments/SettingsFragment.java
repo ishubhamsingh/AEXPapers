@@ -1,7 +1,6 @@
 package com.dm.wallpaper.board.fragments;
 
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,10 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.FileHelper;
 import com.danimahardhika.android.helpers.core.ViewHelper;
-import com.danimahardhika.android.helpers.core.WindowHelper;
 import com.dm.wallpaper.board.R;
 import com.dm.wallpaper.board.R2;
 import com.dm.wallpaper.board.adapters.SettingsAdapter;
@@ -29,7 +26,7 @@ import com.dm.wallpaper.board.helpers.WallpaperHelper;
 import com.dm.wallpaper.board.items.Language;
 import com.dm.wallpaper.board.items.Setting;
 import com.dm.wallpaper.board.preferences.Preferences;
-import com.dm.wallpaper.board.utils.LogUtil;
+import com.danimahardhika.android.helpers.core.utils.LogUtil;
 import com.dm.wallpaper.board.utils.listeners.NavigationListener;
 
 import java.text.DecimalFormat;
@@ -86,9 +83,6 @@ public class SettingsFragment extends Fragment {
         resetViewBottomPadding(mRecyclerView, true);
         ViewHelper.setupToolbar(mToolbar);
 
-        WindowHelper.setTranslucentStatusBar(getActivity(), false);
-        ColorHelper.setStatusBarColor(getActivity(), Color.TRANSPARENT, true);
-
         TextView textView = getActivity().findViewById(R.id.title);
         textView.setText(getActivity().getResources().getString(
                 R.string.navigation_view_settings));
@@ -115,12 +109,6 @@ public class SettingsFragment extends Fragment {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         resetViewBottomPadding(mRecyclerView, true);
-    }
-
-    @Override
-    public void onDestroy() {
-        WindowHelper.setTranslucentStatusBar(getActivity(), true);
-        super.onDestroy();
     }
 
     private void initSettings() {
@@ -171,7 +159,8 @@ public class SettingsFragment extends Fragment {
 
         Language language = LocaleHelper.getCurrentLanguage(getActivity());
         settings.add(Setting.Builder(Setting.Type.LANGUAGE)
-                .subtitle(language.getName())
+                .subtitle(Preferences.get(getActivity()).isLocaleDefault() ?
+                        getString(R.string.pref_options_default) : language.getName())
                 .build()
         );
 

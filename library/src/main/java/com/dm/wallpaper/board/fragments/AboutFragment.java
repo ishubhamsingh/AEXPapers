@@ -1,7 +1,6 @@
 package com.dm.wallpaper.board.fragments;
 
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.ViewHelper;
 import com.danimahardhika.android.helpers.core.WindowHelper;
 import com.dm.wallpaper.board.R;
@@ -25,7 +23,7 @@ import com.dm.wallpaper.board.adapters.AboutAdapter;
 import com.dm.wallpaper.board.applications.WallpaperBoardApplication;
 import com.dm.wallpaper.board.helpers.ConfigurationHelper;
 import com.dm.wallpaper.board.preferences.Preferences;
-import com.dm.wallpaper.board.utils.LogUtil;
+import com.danimahardhika.android.helpers.core.utils.LogUtil;
 import com.dm.wallpaper.board.utils.listeners.NavigationListener;
 
 import butterknife.BindView;
@@ -75,9 +73,6 @@ public class AboutFragment extends Fragment {
         resetRecyclerViewPadding(getResources().getConfiguration().orientation);
         ViewHelper.setupToolbar(mToolbar);
 
-        WindowHelper.setTranslucentStatusBar(getActivity(), false);
-        ColorHelper.setStatusBarColor(getActivity(), Color.TRANSPARENT, true);
-
         TextView textView = getActivity().findViewById(R.id.title);
         textView.setText(getActivity().getResources().getString(
                 R.string.navigation_view_about));
@@ -111,12 +106,6 @@ public class AboutFragment extends Fragment {
 
         StaggeredGridLayoutManager manager = (StaggeredGridLayoutManager) mRecyclerView.getLayoutManager();
         mRecyclerView.setAdapter(new AboutAdapter(getActivity(), manager.getSpanCount()));
-    }
-
-    @Override
-    public void onDestroy() {
-        WindowHelper.setTranslucentStatusBar(getActivity(), true);
-        super.onDestroy();
     }
 
     private void resetRecyclerViewPadding(int orientation) {

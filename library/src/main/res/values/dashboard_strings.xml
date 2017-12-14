@@ -85,6 +85,8 @@
     <string name="wallpaper_apply">Apply wallpaper</string>
     <string name="wallpaper_save_to_device">Save wallpaper</string>
 
+    <string name="wallpapers_favorite_restored">Favorite wallpapers restored</string>
+
     <!-- Wallpaper Tooltips -->
     <string name="wallpaper_tooltip_preview">You are currently previewing wallpaper with smaller resolution,
         which may looks blurry and pixelated.</string>
@@ -145,6 +147,8 @@
     <string name="pref_others_header">Others</string>
     <string name="pref_others_reset_tutorial">Reset Tutorial</string>
     <string name="pref_others_reset_tutorial_reset">Tutorial Reset</string>
+
+    <string name="pref_options_default">Default</string>
 
     <!-- Permission -->
     <string name="permission_storage_denied">Storage permission needed to save wallpaper</string>

@@ -1,6 +1,11 @@
-package com.dm.wallpaper.board.utils.listeners;
+package com.dm.wallpaper.board;
 
-import com.dm.wallpaper.board.items.InAppBilling;
+import android.graphics.Color;
+
+import com.dm.wallpaper.board.items.ColorPalette;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 /*
  * Wallpaper Board
@@ -20,9 +25,16 @@ import com.dm.wallpaper.board.items.InAppBilling;
  * limitations under the License.
  */
 
-public interface InAppBillingListener {
+public class ColorPaletteTest {
 
-    void onInAppBillingSelected(InAppBilling product);
-    void onInAppBillingConsume(String productId);
+    @Test
+    public void testColorPalette() {
+        ColorPalette palette = new ColorPalette();
+        palette.add(Color.WHITE);
+        palette.add(Color.BLACK);
+        palette.add(Color.RED);
+        palette.add(Color.RED);
 
+        Assert.assertEquals(3, palette.size());
+    }
 }

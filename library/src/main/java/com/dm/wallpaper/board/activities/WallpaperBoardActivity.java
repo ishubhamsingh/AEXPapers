@@ -8,6 +8,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -30,7 +31,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.anjlab.android.iab.v3.BillingProcessor;
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.DrawableHelper;
 import com.danimahardhika.android.helpers.core.SoftKeyboardHelper;
@@ -50,20 +50,27 @@ import com.dm.wallpaper.board.fragments.CollectionFragment;
 import com.dm.wallpaper.board.fragments.FavoritesFragment;
 import com.dm.wallpaper.board.fragments.SettingsFragment;
 import com.dm.wallpaper.board.fragments.dialogs.InAppBillingFragment;
-import com.dm.wallpaper.board.helpers.InAppBillingHelper;
+import com.dm.wallpaper.board.helpers.BackupHelper;
+
 import com.dm.wallpaper.board.helpers.LicenseCallbackHelper;
 import com.dm.wallpaper.board.helpers.LocaleHelper;
 import com.dm.wallpaper.board.items.InAppBilling;
 import com.dm.wallpaper.board.preferences.Preferences;
+import com.dm.wallpaper.board.services.WallpaperBoardService;
+import com.dm.wallpaper.board.tasks.LocalFavoritesBackupTask;
+import com.dm.wallpaper.board.tasks.LocalFavoritesRestoreTask;
 import com.dm.wallpaper.board.tasks.WallpapersLoaderTask;
 import com.dm.wallpaper.board.utils.Extras;
 import com.dm.wallpaper.board.utils.ImageConfig;
+import com.dm.wallpaper.board.utils.InAppBillingProcessor;
 import com.dm.wallpaper.board.utils.listeners.InAppBillingListener;
 import com.dm.wallpaper.board.utils.listeners.NavigationListener;
 import com.dm.wallpaper.board.utils.views.HeaderView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
 import com.nostra13.universalimageloader.core.imageaware.ImageViewAware;
+
+import java.io.File;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -94,10 +101,7 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
     NavigationView mNavigationView;
     @BindView(R2.id.drawer_layout)
     DrawerLayout mDrawerLayout;
-    @BindView(R2.id.status_bar_view)
-    View mStatusBar;
 
-    private BillingProcessor mBillingProcessor;
     private ActionBarDrawerToggle mDrawerToggle;
     private FragmentManager mFragManager;
     private LicenseHelper mLicenseHelper;
@@ -114,9 +118,15 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper_board);
         ButterKnife.bind(this);
-        mStatusBar.getLayoutParams().height = WindowHelper.getStatusBarHeight(this);
+        startService(new Intent(this, WallpaperBoardService.class));
+
+        //Todo: wait until google fix the issue, then enable wallpaper crop again on API 26+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Preferences.get(this).setCropWallpaper(false);
+        }
 
         mConfig = onInit();
+        InAppBillingProcessor.get(this).init(mConfig.getLicenseKey());
 
         WindowHelper.resetNavigationBarTranslucent(this,
                 WindowHelper.NavigationBarTranslucent.PORTRAIT_ONLY);
@@ -129,7 +139,6 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
 
         initNavigationView();
         initNavigationViewHeader();
-        initInAppBilling();
 
         mPosition = mLastPosition = 0;
         if (savedInstanceState != null) {
@@ -146,14 +155,33 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
 
         setFragment(getFragment(mPosition));
         if (!WallpaperBoardApplication.isLatestWallpapersLoaded()) {
-            WallpapersLoaderTask.start(this);
+            WallpapersLoaderTask.with(this)
+                    .callback(success -> {
+                        if (!success) return;
+
+                        Fragment fragment = mFragManager.findFragmentByTag(Extras.TAG_COLLECTION);
+                        if (fragment != null && fragment instanceof CollectionFragment) {
+                            ((CollectionFragment) fragment).refreshCategories();
+                        }
+                    })
+                    .start();
         }
 
+        if (Preferences.get(this).isFirstRun()) {
+            File file = new File(BackupHelper.getDefaultDirectory(this), BackupHelper.FILE_BACKUP);
+            Preferences.get(this).setPreviousBackupExist(file.exists());
+        }
 
         if (Preferences.get(this).isFirstRun() && mConfig.isLicenseCheckerEnabled()) {
             mLicenseHelper = new LicenseHelper(this);
-            mLicenseHelper.run(mConfig.getLicenseKey(), mConfig.getRandomString(), new LicenseCallbackHelper(this));
+            mLicenseHelper.run(mConfig.getLicenseKey(),
+                    mConfig.getRandomString(),
+                    new LicenseCallbackHelper(this));
             return;
+        }
+
+        if (!mConfig.isLicenseCheckerEnabled()) {
+            Preferences.get(this).setFirstRun(false);
         }
 
         if (mConfig.isLicenseCheckerEnabled() && !Preferences.get(this).isLicensed()) {
@@ -176,36 +204,34 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt(Extras.EXTRA_POSITION, mPosition);
-        Database.get(this.getApplicationContext()).closeDatabase();
         super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    protected void onResume() {
-        Database.get(this.getApplicationContext()).openDatabase();
-        super.onResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        if (mBillingProcessor != null) {
-            mBillingProcessor.release();
-        }
-
-        if (mLicenseHelper != null) {
-            mLicenseHelper.destroy();
-        }
-
-        Database.get(this.getApplicationContext()).closeDatabase();
-        super.onDestroy();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         resetNavigationView(newConfig.orientation);
-        WindowHelper.resetNavigationBarTranslucent(this, WindowHelper.NavigationBarTranslucent.PORTRAIT_ONLY);
+        WindowHelper.resetNavigationBarTranslucent(this,
+                WindowHelper.NavigationBarTranslucent.PORTRAIT_ONLY);
         LocaleHelper.setLocale(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        InAppBillingProcessor.get(this).destroy();
+
+        if (mLicenseHelper != null) {
+            mLicenseHelper.destroy();
+        }
+
+        stopService(new Intent(this, WallpaperBoardService.class));
+        Database.get(this.getApplicationContext()).closeDatabase();
+
+        if (!Preferences.get(this).isPreviousBackupExist()) {
+            LocalFavoritesBackupTask.with(this.getApplicationContext())
+                    .start(AsyncTask.THREAD_POOL_EXECUTOR);
+        }
+        super.onDestroy();
     }
 
     @Override
@@ -230,7 +256,7 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (!mBillingProcessor.handleActivityResult(requestCode, resultCode, data))
+        if (!InAppBillingProcessor.get(this).handleActivityResult(requestCode, resultCode, data))
             super.onActivityResult(requestCode, resultCode, data);
     }
 
@@ -241,6 +267,11 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
         if (requestCode == PermissionCode.STORAGE) {
             if (grantResults.length > 0 && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, R.string.permission_storage_denied, Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            if (!Preferences.get(this).isBackupRestored()) {
+                LocalFavoritesRestoreTask.with(this).start(AsyncTask.THREAD_POOL_EXECUTOR);
             }
         }
     }
@@ -256,20 +287,14 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
     }
 
     @Override
-    public void onInAppBillingInitialized(boolean success) {
-        if (!success) mBillingProcessor = null;
-    }
-
-    @Override
     public void onInAppBillingSelected(InAppBilling product) {
-        if (mBillingProcessor == null) return;
-        mBillingProcessor.purchase(this, product.getProductId());
+        InAppBillingProcessor.get(this).getProcessor()
+                .purchase(this, product.getProductId());
     }
 
     @Override
     public void onInAppBillingConsume(String productId) {
-        if (mBillingProcessor == null) return;
-        if (mBillingProcessor.consumePurchase(productId)) {
+        if (InAppBillingProcessor.get(this).getProcessor().consumePurchase(productId)) {
             new MaterialDialog.Builder(this)
                     .title(R.string.navigation_view_donate)
                     .content(R.string.donation_success)
@@ -292,13 +317,13 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
-                ColorHelper.setupStatusBarIconColor(WallpaperBoardActivity.this);
+                int color = ColorHelper.getAttributeColor(WallpaperBoardActivity.this, R.attr.colorPrimary);
+                ColorHelper.setupStatusBarIconColor(WallpaperBoardActivity.this, ColorHelper.isLightColor(color));
 
                 if (mPosition == 4) {
                     mPosition = mLastPosition;
                     mNavigationView.getMenu().getItem(mPosition).setChecked(true);
                     InAppBillingFragment.showInAppBillingDialog(mFragManager,
-                            mBillingProcessor,
                             mConfig.getLicenseKey(),
                             mConfig.getDonationProductsId());
                     return;
@@ -410,17 +435,6 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
                 ImageConfig.getDefaultImageOptions(), new ImageSize(720, 720), null, null);
     }
 
-    private void initInAppBilling() {
-        if (!getResources().getBoolean(R.bool.enable_donation)) return;
-
-        if (mBillingProcessor != null) return;
-
-        if (BillingProcessor.isIabServiceAvailable(this)) {
-            mBillingProcessor = new BillingProcessor(this,
-                    mConfig.getLicenseKey(), new InAppBillingHelper(this));
-        }
-    }
-
     private void resetNavigationView(int orientation) {
         int index = mNavigationView.getMenu().size() - 1;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -455,7 +469,6 @@ public abstract class WallpaperBoardActivity extends AppCompatActivity implement
         }
 
         mNavigationView.getMenu().getItem(mPosition).setChecked(true);
-        mStatusBar.setVisibility(mPosition == 0 ? View.GONE : View.VISIBLE);
     }
 
     @Nullable

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
@@ -26,12 +27,14 @@ import com.dm.wallpaper.board.applications.WallpaperBoardConfiguration;
 import com.dm.wallpaper.board.databases.Database;
 import com.dm.wallpaper.board.items.Wallpaper;
 import com.dm.wallpaper.board.tasks.WallpapersLoaderTask;
-import com.dm.wallpaper.board.utils.LogUtil;
+import com.dm.wallpaper.board.utils.Extras;
+import com.danimahardhika.android.helpers.core.utils.LogUtil;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -58,7 +61,7 @@ import static com.dm.wallpaper.board.helpers.ViewHelper.resetViewBottomPadding;
  * limitations under the License.
  */
 
-public class LatestFragment extends Fragment {
+public class LatestFragment extends Fragment implements WallpapersLoaderTask.Callback {
 
     @BindView(R2.id.recyclerview)
     RecyclerView mRecyclerView;
@@ -88,7 +91,10 @@ public class LatestFragment extends Fragment {
                 StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mRecyclerView.setLayoutManager(mManager);
-        mRecyclerView.setHasFixedSize(false);
+
+        mWallpapers = new ArrayList<>();
+        mAdapter = new LatestAdapter(getActivity(), mWallpapers);
+        mRecyclerView.setAdapter(mAdapter);
 
         mSwipe.setColorSchemeColors(ColorHelper.getAttributeColor(
                 getActivity(), R.attr.colorAccent));
@@ -98,7 +104,7 @@ public class LatestFragment extends Fragment {
                 return;
             }
 
-            WallpapersLoaderTask.start(getActivity());
+            WallpapersLoaderTask.with(getActivity()).callback(this).start();
             mAsyncTask = new WallpapersLoader().execute();
         });
 
@@ -135,6 +141,17 @@ public class LatestFragment extends Fragment {
             mAsyncTask.cancel(true);
         }
         super.onDestroy();
+    }
+
+    @Override
+    public void onFinished(boolean success) {
+        if (!success) return;
+
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentByTag(Extras.TAG_COLLECTION);
+        if (fragment != null && fragment instanceof CollectionFragment) {
+            ((CollectionFragment) fragment).refreshCategories();
+        }
     }
 
     private void resetRecyclerViewPadding() {
