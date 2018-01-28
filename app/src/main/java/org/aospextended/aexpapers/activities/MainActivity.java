@@ -37,7 +37,7 @@ public class MainActivity extends WallpaperBoardActivity {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         pref=getSharedPreferences("aexStatsPrefs", Context.MODE_PRIVATE);
         mCompositeDisposable = new CompositeDisposable();
-        if (!(pref.getString(Constants.LAST_VERSION, "null").equals(Constants.KEY_VERSION) && !pref.getBoolean(Constants.IS_FIRST_LAUNCH, true))) {
+        if (!(pref.getString(Constants.LAST_BUILD_DATE, "null").equals(Constants.KEY_BUILD_DATE) && !pref.getBoolean(Constants.IS_FIRST_LAUNCH, true))) {
             pushStats();
         }
         return new ActivityConfiguration()
@@ -83,7 +83,7 @@ public class MainActivity extends WallpaperBoardActivity {
 
             SharedPreferences.Editor editor = pref.edit();
             editor.putBoolean(Constants.IS_FIRST_LAUNCH, false);
-            editor.putString(Constants.LAST_VERSION, Constants.KEY_VERSION);
+            editor.putString(Constants.LAST_BUILD_DATE, Constants.KEY_BUILD_DATE);
             editor.apply();
             Log.d(Constants.TAG, "push successful");
 
