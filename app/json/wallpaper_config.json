@@ -606,6 +606,18 @@
 				"thumbUrl": "http://i.imgur.com/6wiC5xu.png",
 				"name": "AEX Dark #2 by Savio",
 				"category": "Custom Wallz,Colorful,Dark"
-			}
+			},
+		        { "author": "K_bij@y",
+				"url": "https://i.imgur.com/xa5mrzW.jpg",
+				"thumbUrl": "https://i.imgur.com/xa5mrzW.jpg",
+				"name": "AEX refreshed extended",
+				"category": "Colorful,Dark,Material"
+			},
+			{ "author": "K_bij@y",
+				"url": "https://i.imgur.com/U5uJTQg.jpg",
+				"thumbUrl": "https://i.imgur.com/U5uJTQg.jpg",
+				"name": "AEX refreshed red",
+				"category": "Colorful,Dark,Material"
+                        }
 	]
 }
