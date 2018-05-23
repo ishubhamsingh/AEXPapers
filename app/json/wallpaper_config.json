@@ -618,6 +618,24 @@
 				"thumbUrl": "https://i.imgur.com/U5uJTQg.jpg",
 				"name": "AEX refreshed red",
 				"category": "Colorful,Dark,Material"
+                        },
+		       	{ "author": "K_bij@y",
+				"url": "https://i.imgur.com/dUqHE39.png",
+				"thumbUrl": "https://i.imgur.com/dUqHE39.png",
+				"name": "AEX refreshed new",
+				"category": "Colorful,Dark,Material"
+                        },
+			{ "author": "K_bij@y",
+				"url": "https://i.imgur.com/S3CX1Ks.png",
+				"thumbUrl": "https://i.imgur.com/S3CX1Ks.png",
+				"name": "AEX refreshed shadow",
+				"category": "Dark,Material"
+                        },
+			{ "author": "K_bij@y",
+				"url": "https://i.imgur.com/B9o1Yu4.png",
+				"thumbUrl": "https://i.imgur.com/B9o1Yu4.png",
+				"name": "AEX refreshed accent",
+				"category": "Colorful,Dark,Material"
                         }
 	]
 }
